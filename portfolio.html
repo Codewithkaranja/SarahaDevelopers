@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Saraha Developers</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+     <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <i class="fas fa-globe-africa"></i>
+            Saraha<span>Developers</span>
+          </a>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-menu" id="mobileMenu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="particles" id="particles"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Our Portfolio</h1>
+          <p>Deliver ⭐ Scale ⭐Dominate</p>
+          <div class="hero-btns">
+            <a href="contact.html" class="btn btn-primary"
+              >Start Your Project</a
+            >
+            <a href="#featured" class="btn btn-secondary">View Featured Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Websites -->
+    <section class="case-filter">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p>
+            At Saraha Developers, we don’t just build websites—we build digital
+            experiences engineered for growth, usability, and visual impact.
+            Here are some of our most impactful projects across industries.
+          </p>
+        </div>
+
+        <div class="filter-tabs">
+          <div class="filter-tab active" data-category="all">All Projects</div>
+          <div class="filter-tab" data-category="hospitality">Hospitality</div>
+          <div class="filter-tab" data-category="e-learning">E-Learning</div>
+          <div class="filter-tab" data-category="healthcare">HealthCare</div>
+          <div class="filter-tab" data-category="construction">Engineering</div>
+          <div class="filter-tab" data-category="branding">Branding</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="case-studies">
+      <div class="container">
+        <div class="case-grid">
+          <div class="case-card" data-categories="hospitality">
+            <div class="case-img">
+              <img src="greenhubscreenshotnew.png" alt="GreenHub" />
+              <span class="case-tag">Hospitality</span>
+            </div>
+            <div class="case-content">
+              <h3>GreenHub Resort</h3>
+              <p>
+                An eco-luxury hospitality website offering real-time room
+                reservations, virtual destination tours, event planning tools,
+                and secure digital booking experiences.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">+90%</div>
+                  <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">4.8★</div>
+                  <div class="stat-label">Average Rating</div>
+                </div>
+              </div>
+              <a
+                href="https://codewithkaranja.github.io/GreenHubResort/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="e-learning">
+            <div class="case-img">
+              <img src="averiquniversityscreenshotnew.png" alt="kmtc" />
+              <span class="case-tag">E-Learning</span>
+            </div>
+            <div class="case-content">
+              <h3>Averiq University</h3>
+              <p>
+                A smart e-learning platform with digital classrooms, course
+                management, instructor dashboards and student progress tracking.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">85%</div>
+                  <div class="stat-label">Completion Rate</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">50K+</div>
+                  <div class="stat-label">Active Learners</div>
+                </div>
+              </div>
+              <a
+                href="https://codewithkaranja.github.io/Averiquniversity/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="healthcare">
+            <div class="case-img">
+              <img
+                src="kibellanscreenshotnew.png"
+                alt="kibellanuniversalsolutions"
+              />
+              <span class="case-tag">HealthCare</span>
+            </div>
+            <div class="case-content">
+              <h3>Kibellan Solutions</h3>
+              <p>
+                A telemedicine solution improving access to healthcare for
+                supplying renal consumables to kidney patients countrywide.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">100K+</div>
+                  <div class="stat-label">Patients Served</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">60%</div>
+                  <div class="stat-label">Cost Reduction</div>
+                </div>
+              </div>
+              <a
+                href="https://kibellanuniversalsolutions.co.ke"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="construction">
+            <div class="case-img">
+              <img src="kelvinscreenshotnew.png" alt="engkelvin" />
+              <span class="case-tag">Construction</span>
+            </div>
+            <div class="case-content">
+              <h3>BuildSmart Africa</h3>
+              <p>
+                A digital construction portfolio showcasing projects, costing
+                tools, service bookings, and client quote automation.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">70%</div>
+                  <div class="stat-label">Lead Conversion</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">120+</div>
+                  <div class="stat-label">Projects Displayed</div>
+                </div>
+              </div>
+              <a
+                href="https://codewithkaranja.github.io/Eng.Kelvin/index.html"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
+          <div class="case-card" data-categories="construction">
+            <div class="case-img">
+              <img src="willis homepage.png" alt="engkelvin" />
+              <span class="case-tag">Willis & Co. Advocates</span>
+            </div>
+            <div class="case-content">
+              <h3>Willis & Co. Advocates</h3>
+              <p>
+                A professional law firm website with service sections, attorney
+                profiles, appointment booking and client case consultations.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">85%</div>
+                  <div class="stat-label">Client Engagement</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">200+</div>
+                  <div class="stat-label">Legal Consultations</div>
+                </div>
+              </div>
+              <a
+                href="https://codewithkaranja.github.io/Willis-CoAdvocates/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
+          <div class="case-card" data-categories="construction">
+            <div class="case-img">
+              <img src="geo-cart homepage.png" alt="engkelvin" />
+              <span class="case-tag">Geo-Cart Surveyors</span>
+            </div>
+            <div class="case-content">
+              <h3>Geo-Cart Surveyors</h3>
+              <p>
+                A surveying and mapping website with service listings, project
+                visuals, document request portal and inquiry automation.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">90%</div>
+                  <div class="stat-label">Faster Client Quotes</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">40+</div>
+                  <div class="stat-label">Survey Projects Featured</div>
+                </div>
+              </div>
+              <a
+                href="https://codewithkaranja.github.io/Geo-CartSurveyors/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="construction">
+            <div class="case-img">
+              <img src="drillsol(EA) homepage.png" alt="engkelvin" />
+              <span class="case-tag">Drilsol(EA)</span>
+            </div>
+            <div class="case-content">
+              <h3>DrilSol(EA) Ltd.</h3>
+              <p>
+                A drilling and geo-engineering solutions website with service
+                portfolios, project showcase, tender enquiries and client
+                management.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">65%</div>
+                  <div class="stat-label">Increase in Service Leads</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">110+</div>
+                  <div class="stat-label">Geotechnical Projects</div>
+                </div>
+              </div>
+              <a
+                href="https://codewithkaranja.github.io/DrilSol/index.html"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="construction">
+            <div class="case-img">
+              <img src="covelyne homepage.png" alt="engkelvin" />
+              <span class="case-tag">Covelyne Training Institute</span>
+            </div>
+            <div class="case-content">
+              <h3>Covelyne Training Institute</h3>
+              <p>
+                A vibrant academic institution website with course listings,
+                application management, training calendars and student support
+                tools.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">88%</div>
+                  <div class="stat-label">Enrollment Growth</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">320+</div>
+                  <div class="stat-label">Students Enrolled</div>
+                </div>
+              </div>
+              <a
+                href="https://covelynetraininginstitute.co.ke/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
+          <div class="case-card" data-categories="construction">
+            <div class="case-img">
+              <img src="gamechanger homepage.png" alt="engkelvin" />
+              <span class="case-tag">Gamechanger 2027</span>
+            </div>
+            <div class="case-content">
+              <h3>Political Campaign Profile</h3>
+              <p>
+                A persuasive political campaign platform with manifesto
+                highlights, donation system, event timelines and digital
+                community engagement.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">3.2K</div>
+                  <div class="stat-label">Volunteer Sign-Ups</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">120%</div>
+                  <div class="stat-label">Audience Engagement</div>
+                </div>
+              </div>
+              <a
+                href="https://codewithkaranja.github.io/GameChanger/"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="branding">
+            <div class="case-img">
+              <img src="bunibrandscreenshotnew.png" alt="buniBrands" />
+              <span class="case-tag">Branding</span>
+            </div>
+            <div class="case-content">
+              <h3>buniBrands Africa</h3>
+              <p>
+                A bold digital presence for our own creative brand — fusing
+                design, storytelling and performance.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">+200%</div>
+                  <div class="stat-label">Brand Visibility</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">4x</div>
+                  <div class="stat-label">Client Engagement</div>
+                </div>
+              </div>
+              <a
+                href="https://bunibrands.co.ke"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Visit Website
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="case-filter">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p>
+            Saraha Developers takes pride in every project we create. Each website
+            and system reflects our commitment to innovation, usability and
+            performance.
+          </p>
+        </div>
+
+        <div class="filter-tabs">
+          <div class="filter-tab active" data-category="all">All Projects</div>
+          <div class="filter-tab" data-category="fintech">FinTech</div>
+          <div class="filter-tab" data-category="ecommerce">E-commerce</div>
+          <div class="filter-tab" data-category="healthtech">HealthTech</div>
+          <div class="filter-tab" data-category="edtech">EdTech</div>
+          <div class="filter-tab" data-category="logistics">Logistics</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="case-studies">
+      <div class="container">
+        <div class="case-grid">
+          <div class="case-card" data-categories="fintech">
+            <div class="case-img">
+              <!--  <i class="fas fa-mobile-alt"></i>-->
+              <img src="mpesadashboardscreenshot.png" alt="mpesa" />
+              <span class="case-tag">FinTech</span>
+            </div>
+            <div class="case-content">
+              <h3>M-Pesa Payment Intergration</h3>
+              <p>
+                Revolutionized digital banking for a leading financial
+                institution, increasing user engagement by 45%.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">45%</div>
+                  <div class="stat-label">Engagement Increase</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">2M+</div>
+                  <div class="stat-label">Active Users</div>
+                </div>
+              </div>
+              <button class="btn btn-primary" data-case="1">
+                View Case Study
+              </button>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="ecommerce">
+            <div class="case-img">
+              <!--  <i class="fas fa-shopping-cart"></i>-->
+              <img src="kibellanproducts homepage.png" alt="kibellanhome" />
+              <span class="case-tag">E-commerce</span>
+            </div>
+            <div class="case-content">
+              <h3>E-Commerce Online Store</h3>
+              <p>
+                Developed a unified commerce platform that increased online
+                sales by 78% in the first year.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">78%</div>
+                  <div class="stat-label">Sales Growth</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">3.2x</div>
+                  <div class="stat-label">Faster Checkout</div>
+                </div>
+              </div>
+              <button class="btn btn-primary" data-case="2">
+                View Case Study
+              </button>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="healthtech">
+            <div class="case-img">
+              <!--  <i class="fas fa-heartbeat"></i>-->
+              <img src="HMISscreenshot.png" alt="hmis" />
+              <span class="case-tag">HealthTech</span>
+            </div>
+            <div class="case-content">
+              <h3>Telemedicine Platform (HMIS)</h3>
+              <p>
+                Created a scalable telehealth solution that expanded healthcare
+                access to remote communities.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">60%</div>
+                  <div class="stat-label">Cost Reduction</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">100K+</div>
+                  <div class="stat-label">Patients Served</div>
+                </div>
+              </div>
+              <button class="btn btn-primary" data-case="3">
+                View Case Study
+              </button>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="edtech">
+            <div class="case-img">
+              <!--  <i class="fas fa-graduation-cap"></i>-->
+              <img src="studyglade homepage.png" alt="studyglade" />
+              <span class="case-tag">EdTech</span>
+            </div>
+            <div class="case-content">
+              <h3>E-Learning Platform</h3>
+              <p>
+                Built an interactive learning management system for a
+                pan-African education provider.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">85%</div>
+                  <div class="stat-label">Completion Rate</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">50K+</div>
+                  <div class="stat-label">Students Enrolled</div>
+                </div>
+              </div>
+              <button class="btn btn-primary" data-case="4">
+                View Case Study
+              </button>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="logistics">
+            <div class="case-img">
+              <i class="fas fa-shipping-fast"></i>
+              <span class="case-tag">Logistics</span>
+            </div>
+            <div class="case-content">
+              <h3>Supply Chain Management</h3>
+              <p>
+                Developed an AI-powered logistics platform that reduced delivery
+                times by 40%.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">40%</div>
+                  <div class="stat-label">Faster Delivery</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">35%</div>
+                  <div class="stat-label">Cost Savings</div>
+                </div>
+              </div>
+              <button class="btn btn-primary" data-case="5">
+                View Case Study
+              </button>
+            </div>
+          </div>
+
+          <div class="case-card" data-categories="fintech">
+            <div class="case-img">
+              <i class="fas fa-chart-line"></i>
+              <span class="case-tag">FinTech</span>
+            </div>
+            <div class="case-content">
+              <h3>Investment Platform</h3>
+              <p>
+                Created a digital investment platform that democratized access
+                to financial markets.
+              </p>
+              <div class="case-stats">
+                <div class="stat">
+                  <div class="stat-value">300%</div>
+                  <div class="stat-label">User Growth</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">$1M+</div>
+                  <div class="stat-label">Assets Managed</div>
+                </div>
+              </div>
+              <button class="btn btn-primary" data-case="6">
+                View Case Study
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Case Study -->
+    <section class="featured-case" id="featured">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Case Study</h2>
+          <p>An in-depth look at one of our most impactful projects.</p>
+        </div>
+
+        <div class="featured-content">
+          <div class="featured-image">
+            <div
+              style="
+                width: 100%;
+                height: 200px;
+                background: linear-gradient(
+                  135deg,
+                  var(--blue),
+                  var(--emerald)
+                );
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 3rem;
+              "
+            >
+              <!--  <i class="fas fa-mobile-alt"></i>-->
+              <img src="mpesadashboardscreenshot.png" alt="mpesa" />
+            </div>
+          </div>
+          <div class="featured-details">
+            <span class="case-tag">FinTech</span>
+            <h3>Mobile Banking Transformation</h3>
+            <p>
+              We partnered with a leading African bank to completely transform
+              their digital banking experience. The project involved developing
+              a new mobile banking platform from the ground up, with a focus on
+              user experience, security, and scalability.
+            </p>
+
+            <div class="featured-stats">
+              <div class="featured-stat">
+                <div class="value">45%</div>
+                <div class="label">Increase in User Engagement</div>
+              </div>
+              <div class="featured-stat">
+                <div class="value">2M+</div>
+                <div class="label">Active Users</div>
+              </div>
+              <div class="featured-stat">
+                <div class="value">60%</div>
+                <div class="label">Faster Transaction Processing</div>
+              </div>
+              <div class="featured-stat">
+                <div class="value">99.9%</div>
+                <div class="label">Uptime</div>
+              </div>
+            </div>
+
+            <p>
+              The new platform features advanced security measures, seamless
+              integration with existing banking systems, and a user-friendly
+              interface that has significantly improved customer satisfaction
+              scores.
+            </p>
+            <a
+              href="contact.html"
+              class="btn btn-primary"
+              style="margin-top: 20px"
+              >Start Your Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding applications-section">
+      <div class="container text-center">
+        <h2 class="section-title">Trusted By Leading Brands</h2>
+        <p class="section-subtitle">Why The Best in Each Industry Trust Us</p>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide application-card">
+            <img src="apdk.jpg" alt="Agriculture" />
+            <div class="application-content"></div>
+          </div>
+
+          <div class="swiper-slide application-card">
+            <img src="canada.png" alt="Livestock" />
+            <div class="application-content"></div>
+          </div>
+
+          <div class="swiper-slide application-card">
+            <img src="Court of Arms.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+
+          <div class="swiper-slide application-card">
+            <img src="daystar2.png" alt="Commercial Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="elma.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="equityafia.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="Gelian.jpg" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="global fund.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="goshen.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="jitegemee.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="kenhalogo.jpg" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="kituicounty.jpg" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="kmtc logo.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="machakos university.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="machakosassembly.jpg" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="mara specialist.jpg" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="meda.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="migori.jpg" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="navcdp logo.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="redcrosskenya.jpg" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="safaricom.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="segal family.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="Court of Arms.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="semara.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="Terre des hommes.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="makueni.jpg" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+          <div class="swiper-slide application-card">
+            <img src="nairobiwomens.png" alt="Domestic Use" />
+            <div class="application-content"></div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Client Logos 
+    <section class="section clients-section">
+      <div class="container">
+        <h1 class="section-title">Trusted By Leading Brands</h1>
+
+        <div class="clients-grid">
+          <div class="client-logo fade-in">
+            <img src="Court of Arms.png" alt="Court of Arms" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="makueni.jpg" alt="makueni" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="migori.jpg" alt="migori county" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="machakos3.jpg" alt="Machakos Assembly" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="kituicounty.jpg" alt="kitui County" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="navcdp logo.png" alt="NAVCDP" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="kenhalogo.jpg" alt="KENHA" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="redcrosskenya.jpg" alt="redcross" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="safaricom.png" alt="safaricomhome" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="daystar2.png" alt="daystar Unversity" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="equityafia.png" alt="equityafia" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="apdk.jpg" alt="apdk" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="miccenter.jpg" alt="MiC" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="nairobiwomens.png" alt="nairobiwomens" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="citygate.jpg" alt="citygate" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="citygatevaccine.jpg" alt="citygatevaccine" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="mara.jpg" alt="mara specialists" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="machakos university.png" alt="machakos University" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="kmtc logo.png" alt="kmtc" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="semara.png" alt="semara" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="Gelian.jpg" alt="Gelian" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="jitegemee.png" alt="jitegemee" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="Terre des hommes.png" alt="terres des hommes" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="terres macho.png" alt="terre" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="segal family.png" alt="segal" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="global fund.png" alt="global fund" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="elma.png" alt="elma" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="canada.png" alt="canada" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="goshen.png" alt="goshen" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="meda.png" alt="meda" />
+          </div>
+          <div class="client-logo fade-in">
+            <img src="MAS.png" alt="mas intimates" />
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Client Testimonials</h2>
+          <p>What our clients say about working with us.</p>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              Working with Saraha Developers transformed our digital banking
+              capabilities. Their team delivered beyond our expectations and the
+              results have been phenomenal.
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>James Kariuki</h4>
+                <p>CTO, Pan-African Bank</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              The e-commerce platform they built for us has revolutionized our
+              business. Sales have increased dramatically and customer feedback
+              has been overwhelmingly positive.
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>Sarah Mensah</h4>
+                <p>CEO, Retail Chain</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              Their telemedicine solution has enabled us to reach patients in
+              remote areas we couldn't serve before. The impact on healthcare
+              access has been transformative.
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>Dr. Adebayo Oluwaseun</h4>
+                <p>Medical Director, Health Network</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="section-header">
+          <h2>Ready to Start Your Success Story?</h2>
+          <p>
+            Let's discuss how we can help transform your business with
+            innovative digital solutions.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>Saraha Developers</h3>
+            <p>
+              Digital Solutions Powered by African Innovation. We engineer
+              scalable digital products that empower businesses across Africa to
+              compete globally.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/19pQfW1QYw/"
+                class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/bunibrands_ke?igsh=bjlzZ3l6Yjd4dHQz"
+                class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html">Software Development</a></li>
+              <li><a href="services.html">Cloud & DevOps</a></li>
+              <li><a href="services.html">Data & Analytics</a></li>
+              <li><a href="services.html">Brand & Product Strategy</a></li>
+              <li><a href="services.html">Cybersecurity</a></li>
+              <li><a href="services.html">IT Consultancy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="technologies.html">Careers</a></li>
+              <li><a href="services.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Locations</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fa-solid fa-location-pin"></i>
+                <a href="https://maps.app.goo.gl/YoxrnVvyb2oun9Ey6"
+                  >Raiciri House,Nairobi</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-location-pin"></i>
+                <a href="https://maps.app.goo.gl/mi5sutMGHqjdHAo3A"
+                  >Shanbad House, Machakos Town</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-location-pin"></i>
+                <a href="https://maps.app.goo.gl/rBhtwFeH2mesbUkW7"
+                  >Solana Junction, Nyahururu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Saraha Developers. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Case Study Modal -->
+    <div class="modal" id="caseModal">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <div class="modal-body" id="modalBody">
+          <!-- Modal content will be inserted here by JavaScript -->
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>

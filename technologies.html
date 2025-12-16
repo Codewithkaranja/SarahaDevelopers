@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technologies | Saraha Developers</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+     <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="technologies.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <i class="fas fa-globe-africa"></i>
+            Saraha<span>Developers</span>
+          </a>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="technologies.html" class="active">Technologies</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-menu" id="mobileMenu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="particles" id="particles"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Our Technology Stack</h1>
+          <p>Modern ⭐ Secure ⭐ Scalable</p>
+          <div class="hero-btns">
+            <a href="contact.html" class="btn btn-primary">Start a Project</a>
+            <a href="portfolio.html" class="btn btn-secondary"
+              >View Portfolio</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Categories -->
+    <section class="tech-categories">
+      <div class="container">
+        <div class="section-header">
+          <h2>Tech Categories</h2>
+          <p>
+            We specialize in a wide range of technologies to deliver
+            comprehensive digital solutions.
+          </p>
+        </div>
+
+        <div class="category-tabs">
+          <div class="category-tab active" data-category="all">
+            All Technologies
+          </div>
+          <div class="category-tab" data-category="frontend">Frontend</div>
+          <div class="category-tab" data-category="backend">Backend</div>
+          <div class="category-tab" data-category="mobile">Mobile</div>
+          <div class="category-tab" data-category="cloud">Cloud & DevOps</div>
+          <div class="category-tab" data-category="data">Data & AI</div>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-card" data-categories="frontend,mobile">
+            <div class="tech-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3>React</h3>
+            <p>
+              Modern JavaScript library for building user interfaces with
+              reusable components.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Frontend</span>
+              <span class="tech-tag">SPA</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-categories="backend">
+            <div class="tech-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3>Node.js</h3>
+            <p>
+              JavaScript runtime for building scalable server-side applications.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Backend</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-categories="backend">
+            <div class="tech-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <h3>Python</h3>
+            <p>
+              Versatile programming language for web development, data science,
+              and automation.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Backend</span>
+              <span class="tech-tag">Data Science</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-categories="mobile">
+            <div class="tech-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3>React Native</h3>
+            <p>Framework for building native mobile apps using React.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Mobile</span>
+              <span class="tech-tag">Cross-platform</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-categories="cloud">
+            <div class="tech-icon">
+              <i class="fab fa-aws"></i>
+            </div>
+            <h3>AWS</h3>
+            <p>
+              Comprehensive cloud platform for scalable and reliable
+              infrastructure.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Cloud</span>
+              <span class="tech-tag">Infrastructure</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-categories="data">
+            <div class="tech-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>MongoDB</h3>
+            <p>NoSQL database for modern application development.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Database</span>
+              <span class="tech-tag">NoSQL</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-categories="cloud">
+            <div class="tech-icon">
+              <i class="fab fa-docker"></i>
+            </div>
+            <h3>Docker</h3>
+            <p>
+              Containerization platform for consistent development and
+              deployment.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">DevOps</span>
+              <span class="tech-tag">Containers</span>
+            </div>
+          </div>
+
+          <div class="tech-card" data-categories="frontend">
+            <div class="tech-icon">
+              <i class="fab fa-vuejs"></i>
+            </div>
+            <h3>Vue.js</h3>
+            <p>Progressive framework for building user interfaces.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Frontend</span>
+              <span class="tech-tag">Framework</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Technology Stacks</h2>
+          <p>
+            Comprehensive technology expertise across all layers of modern
+            application development.
+          </p>
+        </div>
+
+        <div class="stack-container">
+          <div class="stack-category">
+            <h3><i class="fas fa-desktop"></i> Frontend Development</h3>
+            <div class="stack-items">
+              <div class="stack-item">React</div>
+              <div class="stack-item">Vue.js</div>
+              <div class="stack-item">Angular</div>
+              <div class="stack-item">TypeScript</div>
+              <div class="stack-item">Next.js</div>
+              <div class="stack-item">Tailwind CSS</div>
+              <div class="stack-item">SASS</div>
+            </div>
+          </div>
+
+          <div class="stack-category">
+            <h3><i class="fas fa-server"></i> Backend Development</h3>
+            <div class="stack-items">
+              <div class="stack-item">Node.js</div>
+              <div class="stack-item">Python</div>
+              <div class="stack-item">Java</div>
+              <div class="stack-item">PHP</div>
+              <div class="stack-item">Express.js</div>
+              <div class="stack-item">Django</div>
+              <div class="stack-item">Spring Boot</div>
+            </div>
+          </div>
+
+          <div class="stack-category">
+            <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+            <div class="stack-items">
+              <div class="stack-item">React Native</div>
+              <div class="stack-item">Flutter</div>
+              <div class="stack-item">iOS (Swift)</div>
+              <div class="stack-item">Android (Kotlin)</div>
+              <div class="stack-item">Ionic</div>
+            </div>
+          </div>
+
+          <div class="stack-category">
+            <h3><i class="fas fa-database"></i> Databases</h3>
+            <div class="stack-items">
+              <div class="stack-item">MongoDB</div>
+              <div class="stack-item">PostgreSQL</div>
+              <div class="stack-item">MySQL</div>
+              <div class="stack-item">Redis</div>
+              <div class="stack-item">Elasticsearch</div>
+            </div>
+          </div>
+
+          <div class="stack-category">
+            <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+            <div class="stack-items">
+              <div class="stack-item">AWS</div>
+              <div class="stack-item">Azure</div>
+              <div class="stack-item">Google Cloud</div>
+              <div class="stack-item">Docker</div>
+              <div class="stack-item">Kubernetes</div>
+              <div class="stack-item">Jenkins</div>
+              <div class="stack-item">Terraform</div>
+            </div>
+          </div>
+
+          <div class="stack-category">
+            <h3><i class="fas fa-brain"></i> Data & AI</h3>
+            <div class="stack-items">
+              <div class="stack-item">Python</div>
+              <div class="stack-item">TensorFlow</div>
+              <div class="stack-item">PyTorch</div>
+              <div class="stack-item">Pandas</div>
+              <div class="stack-item">Apache Spark</div>
+              <div class="stack-item">Tableau</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="certifications">
+      <div class="container">
+        <div class="section-header">
+          <h2>Certifications & Partnerships</h2>
+          <p>
+            Our team holds certifications from leading technology providers to
+            ensure expertise and quality.
+          </p>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fab fa-aws"></i>
+            </div>
+            <h3>AWS Partner</h3>
+            <p>Advanced Consulting Partner with multiple AWS certifications</p>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fab fa-microsoft"></i>
+            </div>
+            <h3>Microsoft Gold Partner</h3>
+            <p>Gold competency in Cloud Platform and Application Development</p>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon">
+              <i class="fab fa-google"></i>
+            </div>
+            <h3>Google Cloud Partner</h3>
+            <p>
+              Certified partner for infrastructure and data analytics solutions
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="section-header">
+          <h2>Ready to Build with Modern Technology?</h2>
+          <p>
+            Let's discuss how our technology expertise can bring your digital
+            vision to life.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>Saraha Developers</h3>
+            <p>
+              Digital Solutions Powered by African Innovation. We engineer
+              scalable digital products that empower businesses across Africa to
+              compete globally.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/19pQfW1QYw/"
+                class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/bunibrands_ke?igsh=bjlzZ3l6Yjd4dHQz"
+                class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html">Software Development</a></li>
+              <li><a href="services.html">Cloud & DevOps</a></li>
+              <li><a href="services.html">Data & Analytics</a></li>
+              <li><a href="services.html">Brand & Product Strategy</a></li>
+              <li><a href="services.html">Cybersecurity</a></li>
+              <li><a href="services.html">IT Consultancy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="technologies.html">Careers</a></li>
+              <li><a href="services.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Locations</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fa-solid fa-location-pin"></i>
+                <a href="https://maps.app.goo.gl/YoxrnVvyb2oun9Ey6"
+                  >Raiciri House,Nairobi</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-location-pin"></i>
+                <a href="https://maps.app.goo.gl/mi5sutMGHqjdHAo3A"
+                  >Shanbad House, Machakos Town</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-location-pin"></i>
+                <a href="https://maps.app.goo.gl/rBhtwFeH2mesbUkW7"
+                  >Solana Junction, Nyahururu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Saraha Developers. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="technologies.js"></script>
+  </body>
+</html>

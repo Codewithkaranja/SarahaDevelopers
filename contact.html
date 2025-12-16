@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Saraha Developers</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+     <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <i class="fas fa-globe-africa"></i>
+            Saraha<span>Developers</span>
+          </a>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+          <div class="mobile-menu" id="mobileMenu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="particles" id="particles"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Get In Touch</h1>
+          <p>Ready ⭐ Set ⭐ Scale</p>
+          <div class="hero-btns">
+            <a href="#contact-form" class="btn btn-primary">Send a Message</a>
+            <a href="#offices" class="btn btn-secondary">Visit Our Offices</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>
+            Ready to transform your business with cutting-edge technology? Let's
+            start a conversation about your next project.
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Connect With Our Team</h3>
+            <p>
+              Have a project in mind or need technical consultation? Reach out
+              to us through any of the channels below. Our team typically
+              responds within 24 hours.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Call Us</h4>
+                  <p><a href="tel:+254723 562484">+254 723  562 484</a></p>
+                  <p>Mon-Fri, 8:00 AM - 6:00 PM EAT</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email Us</h4>
+                  <a href="mailto:hello@Saraha Developers.com" target="_blank">
+                    hello@sarahadevelopers.co.ke
+                  </a>
+
+                  <!-- <p>We'll respond within 24 hours</p> -->
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>WhatsApp</h4>
+                  <p>
+                    <a
+                      href="https://wa.me/+254723 562484?text=Hello%20I%20Need%20a%20Website"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      +254 723  562 484
+                    </a>
+                  </p>
+
+                  <!-- <p>Quick responses for urgent inquiries</p> -->
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Visit Us</h4>
+
+                  <a href="https://maps.app.goo.gl/YoxrnVvyb2oun9Ey6"
+                    >Raiciri House,Nairobi,Kenya</a
+                  >
+                  <!-- <p>Raiciri Plaza, Nairobi, Kenya</p>
+                   <p>Book an appointment first</p> -->
+                </div>
+              </div>
+            </div>
+
+            <h3 style="margin-top: 40px">Follow Us</h3>
+            <div class="social-links-contact">
+              <a
+                href="https://www.facebook.com/share/19pQfW1QYw/"
+                class="social-link-contact"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/bunibrands_ke?igsh=bjlzZ3l6Yjd4dHQz"
+                class="social-link-contact"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link-contact">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link-contact">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form" id="contact-form">
+            <h3>Send Us a Message</h3>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Thank you for your message!
+              We'll get back to you within 24 hours.
+            </div>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" class="form-control" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Saraha Developers@gmail.com"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="form-control"
+                    placeholder="+254723562484"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Interested In</label>
+                <select id="service" class="form-control">
+                  <option value="">Select a service</option>
+                  <option value="software">Software Development</option>
+                  <option value="cloud">Cloud & DevOps</option>
+                  <option value="data">Data & Analytics</option>
+                  <option value="design">Brand & Product Strategy</option>
+                  <option value="security">Cybersecurity</option>
+                  <option value="consultancy">IT Consultancy</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="budget">Project Budget (Kshs)</label>
+                <select id="budget" class="form-control">
+                  <option value="">Select budget range</option>
+                  <option value="5k-15k">10,000 - 15,000</option>
+                  <option value="15k-50k">25,000 - 50,000</option>
+                  <option value="50k-100k">50,000 - 100,000</option>
+                  <option value="100k+">100,000+</option>
+                  <option value="not-sure">Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Details *</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Tell us about your project, goals, timeline, and any specific requirements..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offices Section -->
+    <section class="offices" id="offices">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Offices</h2>
+          <p>
+            We have a growing presence across Africa with teams ready to serve
+            your digital transformation needs.
+          </p>
+        </div>
+
+        <div class="office-grid">
+          <div class="office-card">
+            <div class="office-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>Nairobi</h3>
+            <i class="fa-solid fa-location-pin"></i>
+            <a href="https://maps.app.goo.gl/YoxrnVvyb2oun9Ey6"
+              >Raiciri Plaza, 2nd Floor</a
+            >
+
+            <h3><strong>Kenya</strong></h3>
+            <div class="office-hours">
+              <h4>Office Hours</h4>
+              <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+              <p>Sat: 9:00 AM - 2:00 PM</p>
+            </div>
+          </div>
+
+          <div class="office-card">
+            <div class="office-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>Machakos Town</h3>
+            <i class="fa-solid fa-location-pin"></i>
+            <a href="https://maps.app.goo.gl/mi5sutMGHqjdHAo3A"
+              >Shanbad House, Wing C</a
+            >
+
+            <h3><strong>Kenya</strong></h3>
+            <div class="office-hours">
+              <h4>Office Hours</h4>
+              <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+              <p>Sat: 9:00 AM - 2:00 PM</p>
+            </div>
+          </div>
+
+          <div class="office-card">
+            <div class="office-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>Nyahururu Town</h3>
+            <i class="fa-solid fa-location-pin"></i>
+            <a href="https://maps.app.goo.gl/rBhtwFeH2mesbUkW7"
+              >Solana Junction</a
+            >
+            <h3><strong>Kenya</strong></h3>
+            <div class="office-hours">
+              <h4>Office Hours</h4>
+              <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+              <p>Sat: 9:00 AM - 2:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers to common questions about working with us.</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is your typical project timeline?</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Project timelines vary based on complexity and scope. A typical
+                web application takes 3-4 weeks from discovery to launch. We
+                break projects into sprints and provide regular progress
+                updates. During our initial consultation, we'll provide a
+                detailed timeline based on your specific requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you work with startups or only established businesses?</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We work with businesses of all sizes, from startups to large
+                enterprises. For startups, we offer flexible engagement models
+                and can help with product strategy, MVP development, and
+                scaling. We believe in the potential of African startups and
+                offer competitive pricing for early-stage companies.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is your pricing model?</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We offer several pricing models to fit different needs:
+                fixed-price projects for well-defined scopes, time-and-materials
+                for evolving projects, and dedicated team models for long-term
+                partnerships. During our discovery phase, we'll recommend the
+                best approach for your project and provide transparent pricing.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Do you provide ongoing support after project completion?</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we offer comprehensive post-launch support packages
+                including maintenance, updates, hosting management, and
+                technical support. We believe in building long-term partnerships
+                with our clients and ensure your digital solution continues to
+                perform optimally after launch.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How do you ensure project security and confidentiality?</h3>
+              <div class="faq-icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We take security seriously. All team members sign NDAs, we use
+                secure development practices, implement role-based access
+                controls, and can work with your security team to meet specific
+                compliance requirements. We're also happy to sign additional
+                confidentiality agreements to protect your intellectual
+                property.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="section-header">
+          <h2>Ready to Start Your Project?</h2>
+          <p>
+            Let's discuss how we can help transform your business with
+            innovative digital solutions.
+          </p>
+          <a href="#contact-form" class="btn btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>Saraha Developers</h3>
+            <p>
+              Digital Solutions Powered by African Innovation. We engineer
+              scalable digital products that empower businesses across Africa to
+              compete globally.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/share/19pQfW1QYw/"
+                class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/bunibrands_ke?igsh=bjlzZ3l6Yjd4dHQz"
+                class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html">Software Development</a></li>
+              <li><a href="services.html">Cloud & DevOps</a></li>
+              <li><a href="services.html">Data & Analytics</a></li>
+              <li><a href="services.html">Brand & Product Strategy</a></li>
+              <li><a href="services.html">Cybersecurity</a></li>
+              <li><a href="services.html">IT Consultancy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="technologies.html">Careers</a></li>
+              <li><a href="services.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Locations</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fa-solid fa-location-pin"></i>
+                <a href="https://maps.app.goo.gl/YoxrnVvyb2oun9Ey6"
+                  >Raiciri House,Nairobi</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-location-pin"></i>
+                <a href="https://maps.app.goo.gl/mi5sutMGHqjdHAo3A"
+                  >Shanbad House, Machakos Town</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-location-pin"></i>
+                <a href="https://maps.app.goo.gl/rBhtwFeH2mesbUkW7"
+                  >Solana Junction, Nyahururu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Saraha Developers. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
