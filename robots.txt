@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Prevent crawling of system folders (if any in future)
+Disallow: /blog/drafts/
+Disallow: /.vscode/
+
+# Sitemap location
+Sitemap: https://sarahadevelopers.co.ke/sitemap.xml

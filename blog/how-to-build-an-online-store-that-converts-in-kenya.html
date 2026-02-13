@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>How to Build an Online Store That Converts in Kenya (2026 Guide) | Saraha Developers</title>
+  <meta name="description" content="Learn how to build an online store that converts in Kenya in 2026: product pages, M-Pesa payments, delivery options, trust signals, speed, SEO, and checkout best practices." />
+  <meta name="keywords" content="online store kenya, ecommerce website kenya, mpesa ecommerce, ecommerce checkout kenya, build online shop kenya, ecommerce SEO kenya, online store nairobi, ecommerce kitengela, ecommerce ruiru, saraha developers" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <link rel="canonical" href="https://sarahadevelopers.co.ke/blog/how-to-build-an-online-store-that-converts-in-kenya.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/saraha-developers-favicon.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="/saraha-developers-favicon.webp" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Saraha Developers" />
+  <meta property="og:title" content="How to Build an Online Store That Converts in Kenya (2026 Guide)" />
+  <meta property="og:description" content="A practical e-commerce guide for Kenya: product pages, M-Pesa, delivery, trust signals, speed, SEO, and checkout optimization." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://sarahadevelopers.co.ke/blog/how-to-build-an-online-store-that-converts-in-kenya.html" />
+  <meta property="og:image" content="https://sarahadevelopers.co.ke/assets/og-online-store-kenya.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Build an Online Store That Converts in Kenya (2026) | Saraha Developers" />
+  <meta name="twitter:description" content="Product pages, M-Pesa checkout, delivery options, trust, speed, and SEO — practical steps for Kenyan e-commerce." />
+  <meta name="twitter:image" content="https://sarahadevelopers.co.ke/assets/og-online-store-kenya.jpg" />
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Re-use your main site CSS -->
+  <link rel="stylesheet" href="/index.css" />
+
+  <!-- Page-specific styles (same vibe as your previous blog template) -->
+  <style>
+    :root {
+      --navy: #0a1a3e;
+      --blue: #0077ff;
+      --white: #f4f7fa;
+      --gray: #4b5563;
+      --emerald: #00c46c;
+      --light-blue: rgba(0, 119, 255, 0.1);
+      --accent: #00e6a4;
+    }
+
+    .blog-hero {
+      position: relative;
+      background: url("https://images.unsplash.com/photo-1557825835-70d97c4aa567?auto=format&fit=crop&w=1920&q=60")
+        center/cover no-repeat;
+      color: white;
+      padding: 180px 0 140px;
+      overflow: hidden;
+    }
+    .blog-hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,.65);
+    }
+    .blog-hero .container { position: relative; z-index: 2; }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: .85rem;
+      margin-bottom: 14px;
+    }
+
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 14px;
+      opacity: .95;
+      font-size: .95rem;
+    }
+    .post-meta span {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .blog-wrap {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .article-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+
+    .article-card h2 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    .article-card h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    .article-card p, .article-card li {
+      color: var(--gray);
+      font-size: 1.03rem;
+    }
+    .article-card ul { margin: 12px 0 0 18px; }
+    .article-card li { margin-bottom: 10px; }
+
+    .callout {
+      margin-top: 18px;
+      background: rgba(0, 230, 164, .08);
+      border: 1px solid rgba(0, 230, 164, .25);
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .mini-grid {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .mini {
+      border-radius: 12px;
+      padding: 16px;
+      background: #000;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .mini .kpi {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-top: 6px;
+    }
+    .mini p {
+      color: rgba(255,255,255,.88);
+      margin-top: 6px;
+      font-size: .95rem;
+    }
+
+    .toc {
+      background: #000;
+      color: #fff;
+      border-radius: 12px;
+      padding: 22px;
+      position: sticky;
+      top: 110px;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .toc h3 { color: var(--accent); margin-bottom: 12px; font-size: 1.2rem; }
+    .toc a {
+      color: #fff;
+      opacity: .9;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      font-size: .95rem;
+    }
+    .toc a:hover { opacity: 1; color: var(--blue); }
+
+    .checklist {
+      margin-top: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+    }
+    .check-item {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      gap: 10px;
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: #fff;
+    }
+    .check-item:nth-child(odd) { background: rgba(0,0,0,.02); }
+    .check-item i { color: var(--emerald); margin-top: 2px; }
+
+    .author-box {
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,.08);
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(0,0,0,.05);
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .author-box .avatar {
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      background: #000;
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      font-size: 1.3rem;
+      flex: 0 0 auto;
+    }
+    .author-box p { margin: 0; }
+
+    .related {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .related a {
+      display: block;
+      padding: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.10);
+      transition: transform .2s ease;
+    }
+    .related a:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 230, 164, .35);
+    }
+
+    @media (max-width: 992px) {
+      .blog-wrap { grid-template-columns: 1fr; }
+      .toc { position: relative; top: 0; }
+      .mini-grid { grid-template-columns: 1fr; }
+      .related { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Schema: BlogPosting (enhanced) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://sarahadevelopers.co.ke/blog/how-to-build-an-online-store-that-converts-in-kenya.html"
+    },
+    "headline": "How to Build an Online Store That Converts in Kenya (2026 Guide)",
+    "description": "Learn how to build an online store that converts in Kenya in 2026: product pages, M-Pesa payments, delivery options, trust signals, speed, SEO, and checkout best practices.",
+    "image": ["https://sarahadevelopers.co.ke/assets/og-online-store-kenya.jpg"],
+    "author": {
+      "@type": "Organization",
+      "name": "Saraha Developers",
+      "url": "https://sarahadevelopers.co.ke/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Saraha Developers",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sarahadevelopers.co.ke/saraha-developers-favicon.webp"
+      }
+    },
+    "datePublished": "2026-02-12",
+    "dateModified": "2026-02-13",
+    "articleSection": "E-commerce",
+    "about": ["E-commerce", "M-Pesa Payments", "Checkout Optimization", "Delivery", "SEO", "Performance"],
+    "keywords": "online store kenya, ecommerce website kenya, mpesa ecommerce, ecommerce checkout kenya, ecommerce SEO kenya",
+    "inLanguage": "en-KE"
+  }
+  </script>
+
+  <!-- Schema: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sarahadevelopers.co.ke/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sarahadevelopers.co.ke/blogs.html" },
+      { "@type": "ListItem", "position": 3, "name": "Build an Online Store That Converts in Kenya", "item": "https://sarahadevelopers.co.ke/blog/how-to-build-an-online-store-that-converts-in-kenya.html" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: LocalBusiness (local intent) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Saraha Developers",
+    "url": "https://sarahadevelopers.co.ke/",
+    "image": "https://sarahadevelopers.co.ke/saraha-developers-favicon.webp",
+    "telephone": "+254723562484",
+    "areaServed": ["Nairobi", "Kitengela", "Ruiru", "Athi River", "Machakos", "Kitui"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "KE",
+      "addressLocality": "Nairobi"
+    }
+  }
+  </script>
+
+  <!-- Schema: FAQPage (added) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What payment method converts best for online stores in Kenya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "M-Pesa STK Push usually converts best because it’s mobile-first and familiar. You can also add card payments for customers who prefer it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I allow pay on delivery in Kenya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pay on delivery can increase orders but also increases fake orders and returns. If you use it, add confirmations and clear delivery rules."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I make my e-commerce store rank on Google in Kenya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use SEO-friendly product/category pages, fast mobile performance, clear internal linking, and content that targets buyer intent (pricing, comparisons, how-to)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Saraha Developers build an online store for Nairobi, Kitengela and Ruiru?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Saraha Developers builds fast, mobile-first stores with M-Pesa checkout, delivery clarity and SEO for businesses in Nairobi, Kitengela, Ruiru and across Kenya."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="/index.html" class="logo">
+          <img src="/saraha-developers-favicon.webp" alt="Saraha Developers Ltd Logo" class="logo-img" />
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/technologies.html">Technologies</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/blogs.html" class="active">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobileMenu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge">E-commerce • Kenya • Conversion</span>
+        <h1>How to Build an Online Store That Converts in Kenya</h1>
+        <p>What Kenyan customers expect: M-Pesa checkout, delivery clarity, trust signals, fast pages, and product pages that sell.</p>
+
+        <div class="post-meta">
+          <span><i class="fa-regular fa-calendar"></i> Feb 12, 2026</span>
+          <span><i class="fa-regular fa-clock"></i> 10 min read</span>
+          <span><i class="fa-solid fa-location-dot"></i> Nairobi • Kitengela • Ruiru</span>
+        </div>
+
+        <div class="hero-btns" style="margin-top: 26px;">
+          <a href="/contact.html" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Build My Store</a>
+          <a href="#toc" class="btn btn-secondary">Jump to Checklist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section style="padding: 70px 0;">
+    <div class="container">
+      <div class="blog-wrap">
+
+        <!-- Article -->
+        <article class="article-card">
+          <p>
+            In Kenya, a “good-looking” online store is not enough. To convert visitors into paying customers, you need:
+            <strong>trust</strong>, <strong>simple payments (M-Pesa)</strong>, <strong>clear delivery</strong>, and a checkout that doesn’t frustrate people on mobile.
+            Here’s a practical blueprint you can follow.
+          </p>
+
+          <div class="callout">
+            <strong>Conversion goal:</strong> reduce doubts + reduce steps + increase trust — especially on mobile.
+          </div>
+
+          <!-- NEW: Local service area booster -->
+          <div class="callout">
+            <strong>Serving Nairobi, Kitengela & Ruiru:</strong>
+            We build mobile-first online stores with M-Pesa checkout, product SEO, and conversion-focused design.
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="/services.html">View Packages</a>
+              <a class="btn btn-secondary" href="/portfolio.html">See Work</a>
+            </div>
+          </div>
+
+          <h2 id="foundation">1) Start with the conversion foundation</h2>
+          <p>Before you think about ads or Instagram traffic, make sure your store has these 3 basics:</p>
+
+          <div class="mini-grid">
+            <div class="mini">
+              <strong>Trust</strong>
+              <div class="kpi">Proof + Policies</div>
+              <p>Testimonials, returns policy, contact, and real business details.</p>
+            </div>
+            <div class="mini">
+              <strong>Clarity</strong>
+              <div class="kpi">Delivery + Total</div>
+              <p>Delivery fee + timeline shown early so buyers don’t hesitate.</p>
+            </div>
+            <div class="mini">
+              <strong>Simplicity</strong>
+              <div class="kpi">Fast checkout</div>
+              <p>Short forms, guest checkout, and smooth mobile UX.</p>
+            </div>
+          </div>
+
+          <h2 id="product">2) Product pages that sell (what to include)</h2>
+          <ul>
+            <li><strong>Clear photos</strong> (front, side, in-use) + zoom on mobile.</li>
+            <li><strong>Price + availability</strong> (in stock / low stock) visible without scrolling.</li>
+            <li><strong>Key benefits</strong> in bullets (not long paragraphs).</li>
+            <li><strong>Trust blocks</strong>: delivery timeline, returns, warranty, payment methods.</li>
+            <li><strong>FAQs under product</strong>: sizing, materials, delivery locations, payment options.</li>
+            <li><strong>Upsells</strong>: “Frequently bought together” or “You may also like”.</li>
+          </ul>
+
+          <h2 id="payments">3) Payments in Kenya (what converts)</h2>
+          <p>
+            Kenyan buyers expect <strong>M-Pesa</strong>. The best UX is usually <strong>STK Push</strong> because it’s fast on mobile.
+            If you serve diaspora or higher-ticket buyers, add card payments too.
+          </p>
+          <ul>
+            <li>Offer <strong>M-Pesa STK Push</strong> as the default option.</li>
+            <li>Show payment reassurance: “Secure checkout”, “Official Paybill/Till”, and order confirmation.</li>
+            <li>If you add <strong>Pay on Delivery</strong>, control it (confirmation calls, limited zones, or first-order rules).</li>
+          </ul>
+
+          <h2 id="delivery">4) Delivery & logistics (make it simple)</h2>
+          <ul>
+            <li>Show <strong>delivery fee and timeline</strong> before checkout (even estimated).</li>
+            <li>Offer simple options: <strong>Pickup</strong>, <strong>Nairobi delivery</strong>, <strong>countrywide</strong>.</li>
+            <li>Use clear policies: returns, exchanges, and damaged item process.</li>
+            <li>Add WhatsApp support for delivery questions (this increases trust fast).</li>
+          </ul>
+
+          <h2 id="checkout">5) Checkout that converts (mobile-first)</h2>
+          <ul>
+            <li><strong>Guest checkout</strong> (don’t force account creation).</li>
+            <li>Reduce fields: name, phone, location, delivery option (that’s enough for most stores).</li>
+            <li>Auto-format phone numbers and show clear error messages.</li>
+            <li>Show order summary: items, delivery, total (always visible).</li>
+            <li>After payment: success page + WhatsApp confirmation option.</li>
+          </ul>
+
+          <h2 id="speedseo">6) Speed + SEO (get traffic that buys)</h2>
+          <ul>
+            <li>Fast mobile pages (compress images, caching, reduce heavy scripts).</li>
+            <li>SEO product titles that match searches (e.g. “Men’s official shoes Kenya”).</li>
+            <li>Category pages that target intent (e.g. “Skincare products Nairobi”).</li>
+            <li>Blog posts that target buyer intent (pricing, comparisons, how-to).</li>
+            <li>Internal links: blog → category → product → checkout.</li>
+          </ul>
+
+          <h2 id="trust">7) Trust signals Kenyan buyers look for</h2>
+          <ul>
+            <li>Phone number + WhatsApp link visible on every page.</li>
+            <li>Location/coverage: Nairobi, Kitengela, Ruiru or countrywide delivery rules.</li>
+            <li>Real reviews (screenshots allowed if you have permission).</li>
+            <li>Clear returns/refunds policy.</li>
+            <li>Social links that look active and real.</li>
+          </ul>
+
+          <h2 id="checklist">8) Quick checklist (store launch)</h2>
+          <div class="checklist">
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>M-Pesa STK Push works end-to-end (test payments).</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Delivery fees/timelines visible before checkout.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Product pages have photos, benefits, FAQs, and trust blocks.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Checkout is short, mobile-friendly, and supports guest checkout.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Site is fast on mobile (images compressed + caching).</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Basic SEO: titles, descriptions, clean URLs, internal links.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Trust: WhatsApp + phone + policies + testimonials.</div></div>
+          </div>
+
+          <div class="callout">
+            <strong>Want Saraha Developers to build your store?</strong><br />
+            We design fast e-commerce websites with M-Pesa checkout, product SEO, and conversion-focused layouts.
+            <div style="margin-top: 12px;">
+              <a class="btn btn-primary" href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20I%20need%20an%20online%20store%20that%20converts%20in%20Kenya%20(M-Pesa%20checkout%2C%20delivery%2C%20SEO).">
+                WhatsApp to Start
+              </a>
+            </div>
+          </div>
+
+          <!-- Author -->
+          <div class="author-box">
+            <div class="avatar"><i class="fa-solid fa-pen-nib"></i></div>
+            <div>
+              <p><strong>Written by Saraha Developers</strong></p>
+              <p>Web design, e-commerce, SEO and software development for Kenyan businesses. Call/WhatsApp: <a href="tel:+254723562484">+254 723 562 484</a></p>
+            </div>
+          </div>
+
+          <!-- Related -->
+          <h2 style="margin-top: 34px;">Related posts</h2>
+          <div class="related">
+            <a href="/blog/how-much-does-a-website-cost-in-kenya.html">
+              <strong>How Much Does a Website Cost in Kenya?</strong>
+              <div style="opacity:.85; margin-top:6px;">Pricing breakdown + what affects cost.</div>
+            </a>
+            <a href="/blog/core-web-vitals-made-simple.html">
+              <strong>Core Web Vitals Made Simple</strong>
+              <div style="opacity:.85; margin-top:6px;">Make your store faster on mobile.</div>
+            </a>
+            <a href="/blog/how-to-rank-on-google-kenya.html">
+              <strong>How to Rank on Google in Kenya (2026)</strong>
+              <div style="opacity:.85; margin-top:6px;">Local SEO checklist for more traffic.</div>
+            </a>
+            <a href="/blog/seo-services-nairobi.html">
+              <strong>SEO Services in Nairobi: What Actually Moves Rankings</strong>
+              <div style="opacity:.85; margin-top:6px;">What works in competitive searches.</div>
+            </a>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="toc" id="toc">
+          <h3>On this page</h3>
+          <a href="#foundation">1) Conversion foundation</a>
+          <a href="#product">2) Product pages that sell</a>
+          <a href="#payments">3) Payments (M-Pesa)</a>
+          <a href="#delivery">4) Delivery & logistics</a>
+          <a href="#checkout">5) Checkout best practices</a>
+          <a href="#speedseo">6) Speed + SEO</a>
+          <a href="#trust">7) Trust signals</a>
+          <a href="#checklist">8) Launch checklist</a>
+
+          <div style="margin-top: 16px;">
+            <a class="btn btn-primary" style="width:100%; text-align:center;"
+               href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20I%20want%20an%20e-commerce%20website%20that%20converts%20in%20Kenya.">
+              WhatsApp Us
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" style="padding: 80px 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ready to Launch Your Online Store?</h2>
+        <p>We’ll build a fast, mobile-first store with M-Pesa payments, delivery clarity, and SEO that brings buyers.</p>
+        <a href="/contact.html" class="btn btn-primary">Request a Proposal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Saraha Developers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.getElementById("navLinks");
+    if (mobileMenu && navLinks) {
+      mobileMenu.addEventListener("click", () => navLinks.classList.toggle("active"));
+    }
+  </script>
+</body>
+</html>

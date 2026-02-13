@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Shopify vs WooCommerce in Kenya (2026): Which One Is Better for Your Store? | Saraha Developers</title>
+  <meta name="description" content="Shopify vs WooCommerce in Kenya (2026): compare pricing, M-Pesa payments, delivery setup, speed, SEO, ownership, and maintenance. Choose the best platform for Kenyan e-commerce." />
+  <meta name="keywords" content="shopify kenya, woocommerce kenya, shopify vs woocommerce kenya, ecommerce kenya, mpesa shopify, mpesa woocommerce, online store kenya, saraha developers" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <link rel="canonical" href="https://sarahadevelopers.co.ke/blog/shopify-vs-woocommerce-kenya.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/saraha-developers-favicon.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="/saraha-developers-favicon.webp" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Saraha Developers" />
+  <meta property="og:title" content="Shopify vs WooCommerce in Kenya (2026): Which One Is Better?" />
+  <meta property="og:description" content="Compare Shopify vs WooCommerce in Kenya: pricing, M-Pesa, delivery options, speed, SEO, and long-term ownership." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://sarahadevelopers.co.ke/blog/shopify-vs-woocommerce-kenya.html" />
+  <meta property="og:image" content="https://sarahadevelopers.co.ke/assets/og-shopify-vs-woocommerce.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shopify vs WooCommerce in Kenya (2026) | Saraha Developers" />
+  <meta name="twitter:description" content="Kenya e-commerce comparison: costs, M-Pesa payments, delivery setup, SEO, and maintenance." />
+  <meta name="twitter:image" content="https://sarahadevelopers.co.ke/assets/og-shopify-vs-woocommerce.jpg" />
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Re-use your main site CSS -->
+  <link rel="stylesheet" href="/index.css" />
+
+  <!-- Page styles (same Saraha blog vibe) -->
+  <style>
+    :root {
+      --navy: #0a1a3e;
+      --blue: #0077ff;
+      --white: #f4f7fa;
+      --gray: #4b5563;
+      --emerald: #00c46c;
+      --accent: #00e6a4;
+    }
+
+    .blog-hero {
+      position: relative;
+      background: url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1920&q=60")
+        center/cover no-repeat;
+      color: white;
+      padding: 180px 0 140px;
+      overflow: hidden;
+    }
+    .blog-hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,.7);
+    }
+    .blog-hero .container { position: relative; z-index: 2; }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: .85rem;
+      margin-bottom: 14px;
+    }
+
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 14px;
+      opacity: .95;
+      font-size: .95rem;
+    }
+    .post-meta span {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .blog-wrap {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .article-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+
+    .article-card h2 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    .article-card h3 {
+      margin-top: 18px;
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    .article-card p, .article-card li {
+      color: var(--gray);
+      font-size: 1.03rem;
+    }
+    .article-card ul { margin: 12px 0 0 18px; }
+    .article-card li { margin-bottom: 10px; }
+
+    .callout {
+      margin-top: 18px;
+      background: rgba(0, 230, 164, .08);
+      border: 1px solid rgba(0, 230, 164, .25);
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .compare {
+      margin-top: 18px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+    }
+    .compare-row {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr 1fr;
+      gap: 0;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: #fff;
+    }
+    .compare-row:nth-child(odd) { background: rgba(0,0,0,.02); }
+    .compare-cell {
+      padding: 14px 16px;
+      border-right: 1px solid rgba(0,0,0,.06);
+    }
+    .compare-cell:last-child { border-right: none; }
+    .compare-head {
+      background: #000 !important;
+      color: #fff;
+    }
+    .compare-head .compare-cell { border-right: 1px solid rgba(255,255,255,.12); }
+    .compare-head .compare-cell:last-child { border-right: none; }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: .82rem;
+      margin-right: 6px;
+      line-height: 1;
+    }
+    .pill.good { background: rgba(0,230,164,.18); border: 1px solid rgba(0,230,164,.35); color: var(--navy); }
+    .pill.mid  { background: rgba(0,119,255,.12); border: 1px solid rgba(0,119,255,.25); color: var(--navy); }
+    .pill.warn { background: rgba(255, 190, 11, .18); border: 1px solid rgba(255, 190, 11, .35); color: var(--navy); }
+
+    .toc {
+      background: #000;
+      color: #fff;
+      border-radius: 12px;
+      padding: 22px;
+      position: sticky;
+      top: 110px;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .toc h3 { color: var(--accent); margin-bottom: 12px; font-size: 1.2rem; }
+    .toc a {
+      color: #fff;
+      opacity: .9;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      font-size: .95rem;
+    }
+    .toc a:hover { opacity: 1; color: var(--blue); }
+
+    .checklist {
+      margin-top: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+    }
+    .check-item {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      gap: 10px;
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: #fff;
+    }
+    .check-item:nth-child(odd) { background: rgba(0,0,0,.02); }
+    .check-item i { color: var(--emerald); margin-top: 2px; }
+
+    .author-box {
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,.08);
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(0,0,0,.05);
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .author-box .avatar {
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      background: #000;
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      font-size: 1.3rem;
+      flex: 0 0 auto;
+    }
+    .author-box p { margin: 0; }
+
+    .faq {
+      margin-top: 16px;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .faq details {
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: #fff;
+    }
+    .faq details:nth-child(odd) { background: rgba(0,0,0,.02); }
+    .faq summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--navy);
+      list-style: none;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq p { margin-top: 10px; }
+
+    .related {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .related a {
+      display: block;
+      padding: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.10);
+      transition: transform .2s ease;
+    }
+    .related a:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 230, 164, .35);
+    }
+
+    @media (max-width: 992px) {
+      .blog-wrap { grid-template-columns: 1fr; }
+      .toc { position: relative; top: 0; }
+      .compare-row { grid-template-columns: 1fr; }
+      .compare-cell { border-right: none; border-bottom: 1px solid rgba(0,0,0,.06); }
+      .compare-cell:last-child { border-bottom: none; }
+      .compare-head .compare-cell { border-bottom: 1px solid rgba(255,255,255,.12); }
+      .related { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Schema: BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sarahadevelopers.co.ke/blog/shopify-vs-woocommerce-kenya.html" },
+    "headline": "Shopify vs WooCommerce in Kenya (2026): Which One Is Better for Your Store?",
+    "description": "Shopify vs WooCommerce in Kenya (2026): compare pricing, M-Pesa payments, delivery setup, speed, SEO, ownership, and maintenance. Choose the best platform for Kenyan e-commerce.",
+    "image": ["https://sarahadevelopers.co.ke/assets/og-shopify-vs-woocommerce.jpg"],
+    "author": { "@type": "Organization", "name": "Saraha Developers", "url": "https://sarahadevelopers.co.ke/" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Saraha Developers",
+      "logo": { "@type": "ImageObject", "url": "https://sarahadevelopers.co.ke/saraha-developers-favicon.webp" }
+    },
+    "datePublished": "2026-02-13",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-KE"
+  }
+  </script>
+
+  <!-- Schema: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sarahadevelopers.co.ke/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sarahadevelopers.co.ke/blogs.html" },
+      { "@type": "ListItem", "position": 3, "name": "Shopify vs WooCommerce (Kenya)", "item": "https://sarahadevelopers.co.ke/blog/shopify-vs-woocommerce-kenya.html" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I accept M-Pesa on Shopify in Kenya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but usually through third-party integrations or payment providers. The best setup depends on whether you need STK Push, Paybill/Till, and how you want orders reconciled."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is WooCommerce better for SEO than Shopify?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both can rank well on Google. WooCommerce gives more control over technical SEO and hosting. Shopify is also strong for SEO, but you have less backend control."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is cheaper in Kenya: Shopify or WooCommerce?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shopify has predictable monthly fees. WooCommerce can be cheaper to start but costs vary depending on hosting, premium plugins, and maintenance."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="/index.html" class="logo">
+          <img src="/saraha-developers-favicon.webp" alt="Saraha Developers Ltd Logo" class="logo-img" />
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/technologies.html">Technologies</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/blogs.html" class="active">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobileMenu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="hero-content" style="text-align:center;">
+        <span class="badge">E-commerce • Kenya • Payments</span>
+        <h1>Shopify vs WooCommerce in Kenya (2026)</h1>
+        <p>Pricing, M-Pesa setup, delivery, SEO, speed, and long-term ownership — choose the right platform for your store.</p>
+
+        <div class="post-meta">
+          <span><i class="fa-regular fa-calendar"></i> Feb 13, 2026</span>
+          <span><i class="fa-regular fa-clock"></i> 10 min read</span>
+          <span><i class="fa-solid fa-location-dot"></i> Nairobi / Kenya</span>
+        </div>
+
+        <div class="hero-btns" style="margin-top: 26px;">
+          <a href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20help%20me%20choose%20between%20Shopify%20and%20WooCommerce%20for%20my%20store%20in%20Kenya." class="btn btn-primary">
+            <i class="fa-brands fa-whatsapp"></i> Get Advice
+          </a>
+          <a href="#toc" class="btn btn-secondary">Jump to Checklist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section style="padding: 70px 0;">
+    <div class="container">
+      <div class="blog-wrap">
+
+        <!-- Article -->
+        <article class="article-card">
+          <p>
+            Shopify and WooCommerce can both run successful online stores in Kenya — but they work differently.
+            Shopify is an all-in-one hosted platform (you pay monthly). WooCommerce is WordPress-based (you control hosting and customization).
+            This guide breaks down what matters most in Kenya: <strong>M-Pesa</strong>, <strong>delivery setup</strong>, <strong>cost</strong>, <strong>SEO</strong>, and <strong>maintenance</strong>.
+          </p>
+
+          <div class="callout">
+            <strong>Quick rule:</strong> Choose Shopify for simplicity and predictable costs.
+            Choose WooCommerce for flexibility, deeper customization, and more control.
+          </div>
+
+          <h2 id="compare">1) Quick comparison (Kenya reality)</h2>
+          <div class="compare" aria-label="Shopify vs WooCommerce in Kenya">
+            <div class="compare-row compare-head">
+              <div class="compare-cell"><strong>Factor</strong></div>
+              <div class="compare-cell"><strong>Shopify</strong></div>
+              <div class="compare-cell"><strong>WooCommerce</strong></div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Setup speed</strong></div>
+              <div class="compare-cell"><span class="pill good">Fast</span> easiest to launch</div>
+              <div class="compare-cell"><span class="pill mid">Moderate</span> depends on hosting + theme</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Monthly costs</strong></div>
+              <div class="compare-cell"><span class="pill mid">Fixed</span> subscription + apps</div>
+              <div class="compare-cell"><span class="pill good">Flexible</span> hosting + plugins (varies)</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>M-Pesa integration</strong></div>
+              <div class="compare-cell"><span class="pill mid">Possible</span> usually third-party integrations</div>
+              <div class="compare-cell"><span class="pill good">Flexible</span> many integration paths</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Speed / performance</strong></div>
+              <div class="compare-cell"><span class="pill good">Strong</span> managed infrastructure</div>
+              <div class="compare-cell"><span class="pill mid">Depends</span> hosting + optimization</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>SEO control</strong></div>
+              <div class="compare-cell"><span class="pill mid">Good</span> strong basics, less backend control</div>
+              <div class="compare-cell"><span class="pill good">High</span> full control + advanced technical SEO</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Customization</strong></div>
+              <div class="compare-cell"><span class="pill mid">Good</span> themes + apps (within Shopify rules)</div>
+              <div class="compare-cell"><span class="pill good">Best</span> full freedom via WordPress + code</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Maintenance</strong></div>
+              <div class="compare-cell"><span class="pill good">Low</span> Shopify handles updates/security</div>
+              <div class="compare-cell"><span class="pill warn">Ongoing</span> updates, backups, security hardening</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Ownership / control</strong></div>
+              <div class="compare-cell"><span class="pill mid">Platform-based</span> easier, but you depend on Shopify</div>
+              <div class="compare-cell"><span class="pill good">You own more</span> hosting, data, stack choices</div>
+            </div>
+          </div>
+
+          <h2 id="payments">2) M-Pesa & payments (what matters most in Kenya)</h2>
+          <p>
+            Kenyan buyers trust <strong>M-Pesa</strong> more than anything. Your store should make M-Pesa feel simple:
+            <strong>clear checkout</strong>, <strong>instant confirmation</strong>, and <strong>clean order reconciliation</strong>.
+          </p>
+          <ul>
+            <li><strong>Best UX:</strong> STK Push (customer pays on phone in seconds).</li>
+            <li><strong>Also common:</strong> Paybill/Till + manual confirmation (works, but more friction).</li>
+            <li><strong>Pro tip:</strong> Choose a platform based on how you’ll handle payment confirmation, refunds, and accounting.</li>
+          </ul>
+
+          <div class="callout">
+            <strong>Practical note:</strong> On Shopify, M-Pesa is usually done via third-party integrations.
+            On WooCommerce, you can integrate in more flexible ways — but you must maintain the site well.
+          </div>
+
+          <h2 id="delivery">3) Delivery & logistics (Nairobi + countrywide)</h2>
+          <p>Conversion improves when delivery is clear before checkout:</p>
+          <ul>
+            <li>Show delivery fees and timelines early (Nairobi same-day/next-day vs upcountry timelines).</li>
+            <li>Offer pickup options (shop/warehouse/pickup point) if possible.</li>
+            <li>Keep checkout simple: name, phone, location, delivery option.</li>
+            <li>Use WhatsApp updates for delivery (Kenya buyers love this).</li>
+          </ul>
+
+          <h2 id="costs">4) Total cost in Kenya (what people forget)</h2>
+          <p>Don’t compare only “build cost” — compare the full year:</p>
+          <ul>
+            <li><strong>Shopify:</strong> monthly plan + paid apps + transaction/payment provider fees (varies).</li>
+            <li><strong>WooCommerce:</strong> hosting + domain + premium plugins + developer support/maintenance (varies).</li>
+            <li><strong>Both:</strong> product photos, content, ads, and customer support still matter.</li>
+          </ul>
+
+          <h2 id="who">5) Who should choose Shopify vs WooCommerce?</h2>
+
+          <h3>Choose Shopify if:</h3>
+          <ul>
+            <li>You want the simplest launch with minimal maintenance.</li>
+            <li>You prefer predictable monthly costs.</li>
+            <li>You don’t want to handle updates/security/hosting issues.</li>
+            <li>Your store is standard (products, cart, checkout, basic discounts).</li>
+          </ul>
+
+          <h3>Choose WooCommerce if:</h3>
+          <ul>
+            <li>You want deeper customization (checkout flow, pricing rules, delivery logic).</li>
+            <li>You want more SEO and performance control (with good hosting).</li>
+            <li>You want strong ownership and flexibility long-term.</li>
+            <li>You have access to maintenance support (so the site stays secure and fast).</li>
+          </ul>
+
+          <h2 id="checklist">6) Quick checklist (before you decide)</h2>
+          <div class="checklist">
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Do you need <strong>STK Push</strong> and automatic payment confirmation?</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Will you pay a <strong>monthly subscription</strong> comfortably, or do you prefer flexible costs?</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Do you have someone to handle <strong>maintenance/security</strong> (if using WooCommerce)?</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Do you need special delivery rules (zones, riders, branches, COD controls)?</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Is your priority <strong>speed-to-market</strong> or <strong>full customization</strong>?</div></div>
+          </div>
+
+          <div class="callout">
+            <strong>Want us to recommend the best option?</strong><br />
+            Tell us what you sell, how many products, your delivery locations, and the payment method you want (M-Pesa STK Push / Paybill / Till).
+            <div style="margin-top: 12px;">
+              <a class="btn btn-primary" href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20I%20need%20help%20choosing%20Shopify%20vs%20WooCommerce%20in%20Kenya.%20I%20sell%3A%20%20.%20Products%3A%20%20.%20Delivery%3A%20%20.%20Payments%3A%20M-Pesa%20">
+                WhatsApp for Advice
+              </a>
+              <a class="btn btn-secondary" href="/contact.html" style="margin-left: 10px;">Request a Call</a>
+            </div>
+          </div>
+
+          <!-- Author -->
+          <div class="author-box">
+            <div class="avatar"><i class="fa-solid fa-pen-nib"></i></div>
+            <div>
+              <p><strong>Written by Saraha Developers</strong></p>
+              <p>Web design, e-commerce, SEO & custom systems for Kenyan businesses. Call/WhatsApp: <a href="tel:+254723562484">+254 723 562 484</a></p>
+            </div>
+          </div>
+
+          <!-- Related -->
+          <h2 style="margin-top: 34px;">Related posts</h2>
+          <div class="related">
+            <a href="/blog/how-to-build-an-online-store-that-converts-in-kenya.html">
+              <strong>How to Build an Online Store That Converts in Kenya</strong>
+              <div style="opacity:.85; margin-top:6px;">Checkout, trust signals, delivery clarity.</div>
+            </a>
+            <a href="/blog/wordpress-vs-custom-kenya.html">
+              <strong>WordPress vs Custom Website in Kenya</strong>
+              <div style="opacity:.85; margin-top:6px;">Speed, SEO, security, and scaling.</div>
+            </a>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="toc" id="toc">
+          <h3>On this page</h3>
+          <a href="#compare">1) Quick comparison</a>
+          <a href="#payments">2) M-Pesa & payments</a>
+          <a href="#delivery">3) Delivery & logistics</a>
+          <a href="#costs">4) Total cost</a>
+          <a href="#who">5) Who should choose what</a>
+          <a href="#checklist">6) Decision checklist</a>
+
+          <div style="margin-top: 16px;">
+            <a class="btn btn-primary" style="width:100%; text-align:center;"
+              href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20I%20need%20help%20choosing%20Shopify%20vs%20WooCommerce%20for%20my%20store%20in%20Kenya.">
+              WhatsApp Us
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" style="padding: 80px 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ready to Launch Your Store?</h2>
+        <p>We’ll build a fast, mobile-first store with strong checkout, delivery clarity, and SEO that brings buyers.</p>
+        <a href="/contact.html" class="btn btn-primary">Request a Proposal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Saraha Developers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.getElementById("navLinks");
+    if (mobileMenu && navLinks) {
+      mobileMenu.addEventListener("click", () => navLinks.classList.toggle("active"));
+    }
+  </script>
+</body>
+</html>

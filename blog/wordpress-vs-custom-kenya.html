@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>WordPress vs Custom Website in Kenya (2026): Which One Should You Choose? | Saraha Developers</title>
+  <meta name="description" content="WordPress vs custom website in Kenya (2026): compare cost, speed, SEO, security, scalability and maintenance. Learn the best option for SMEs, e-commerce and custom systems." />
+  <meta name="keywords" content="wordpress vs custom website kenya, wordpress kenya, custom website kenya, web design kenya, website cost kenya, wordpress vs coding, ecommerce kenya, saraha developers" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <link rel="canonical" href="https://sarahadevelopers.co.ke/blog/wordpress-vs-custom-kenya.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/saraha-developers-favicon.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="/saraha-developers-favicon.webp" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Saraha Developers" />
+  <meta property="og:title" content="WordPress vs Custom Website in Kenya (2026): Which One Should You Choose?" />
+  <meta property="og:description" content="Compare WordPress vs custom websites in Kenya: pricing, speed, SEO, security, scalability and maintenance. Choose the right option for your business." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://sarahadevelopers.co.ke/blog/wordpress-vs-custom-kenya.html" />
+  <meta property="og:image" content="https://sarahadevelopers.co.ke/assets/og-wordpress-vs-custom.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WordPress vs Custom Website in Kenya (2026) | Saraha Developers" />
+  <meta name="twitter:description" content="WordPress vs custom in Kenya: cost, SEO, speed, security and scalability — with a decision checklist." />
+  <meta name="twitter:image" content="https://sarahadevelopers.co.ke/assets/og-wordpress-vs-custom.jpg" />
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Re-use your main site CSS -->
+  <link rel="stylesheet" href="/index.css" />
+
+  <!-- Page Styles (matches your blog vibe) -->
+  <style>
+    :root {
+      --navy: #0a1a3e;
+      --blue: #0077ff;
+      --white: #f4f7fa;
+      --gray: #4b5563;
+      --emerald: #00c46c;
+      --accent: #00e6a4;
+    }
+
+    .blog-hero {
+      position: relative;
+      background: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=60")
+        center/cover no-repeat;
+      color: white;
+      padding: 180px 0 140px;
+      overflow: hidden;
+    }
+    .blog-hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,.7);
+    }
+    .blog-hero .container { position: relative; z-index: 2; }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: .85rem;
+      margin-bottom: 14px;
+    }
+
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 14px;
+      opacity: .95;
+      font-size: .95rem;
+    }
+    .post-meta span {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .blog-wrap {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .article-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+
+    .article-card h2 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    .article-card h3 {
+      margin-top: 18px;
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    .article-card p, .article-card li {
+      color: var(--gray);
+      font-size: 1.03rem;
+    }
+    .article-card ul { margin: 12px 0 0 18px; }
+    .article-card li { margin-bottom: 10px; }
+
+    .callout {
+      margin-top: 18px;
+      background: rgba(0, 230, 164, .08);
+      border: 1px solid rgba(0, 230, 164, .25);
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .compare {
+      margin-top: 18px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+    }
+    .compare-row {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 1fr;
+      gap: 0;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: #fff;
+    }
+    .compare-row:nth-child(odd) { background: rgba(0,0,0,.02); }
+    .compare-cell {
+      padding: 14px 16px;
+      border-right: 1px solid rgba(0,0,0,.06);
+    }
+    .compare-cell:last-child { border-right: none; }
+    .compare-head {
+      background: #000 !important;
+      color: #fff;
+    }
+    .compare-head .compare-cell { border-right: 1px solid rgba(255,255,255,.12); }
+    .compare-head .compare-cell:last-child { border-right: none; }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: .82rem;
+      margin-right: 6px;
+    }
+    .pill.good { background: rgba(0,230,164,.18); border: 1px solid rgba(0,230,164,.35); color: var(--navy); }
+    .pill.mid  { background: rgba(0,119,255,.12); border: 1px solid rgba(0,119,255,.25); color: var(--navy); }
+    .pill.warn { background: rgba(255, 190, 11, .18); border: 1px solid rgba(255, 190, 11, .35); color: var(--navy); }
+
+    .toc {
+      background: #000;
+      color: #fff;
+      border-radius: 12px;
+      padding: 22px;
+      position: sticky;
+      top: 110px;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .toc h3 { color: var(--accent); margin-bottom: 12px; font-size: 1.2rem; }
+    .toc a {
+      color: #fff;
+      opacity: .9;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      font-size: .95rem;
+    }
+    .toc a:hover { opacity: 1; color: var(--blue); }
+
+    .checklist {
+      margin-top: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+    }
+    .check-item {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      gap: 10px;
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: #fff;
+    }
+    .check-item:nth-child(odd) { background: rgba(0,0,0,.02); }
+    .check-item i { color: var(--emerald); margin-top: 2px; }
+
+    .author-box {
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,.08);
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(0,0,0,.05);
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .author-box .avatar {
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      background: #000;
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      font-size: 1.3rem;
+      flex: 0 0 auto;
+    }
+    .author-box p { margin: 0; }
+
+    .faq {
+      margin-top: 16px;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .faq details {
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: #fff;
+    }
+    .faq details:nth-child(odd) { background: rgba(0,0,0,.02); }
+    .faq summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--navy);
+      list-style: none;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq p { margin-top: 10px; }
+
+    .related {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .related a {
+      display: block;
+      padding: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.10);
+      transition: transform .2s ease;
+    }
+    .related a:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 230, 164, .35);
+    }
+
+    @media (max-width: 992px) {
+      .blog-wrap { grid-template-columns: 1fr; }
+      .toc { position: relative; top: 0; }
+      .compare-row { grid-template-columns: 1fr; }
+      .compare-cell { border-right: none; border-bottom: 1px solid rgba(0,0,0,.06); }
+      .compare-cell:last-child { border-bottom: none; }
+      .compare-head .compare-cell { border-bottom: 1px solid rgba(255,255,255,.12); }
+      .related { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Schema: BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://sarahadevelopers.co.ke/blog/wordpress-vs-custom-kenya.html" },
+    "headline": "WordPress vs Custom Website in Kenya (2026): Which One Should You Choose?",
+    "description": "WordPress vs custom website in Kenya (2026): compare cost, speed, SEO, security, scalability and maintenance. Learn the best option for SMEs, e-commerce and custom systems.",
+    "image": ["https://sarahadevelopers.co.ke/assets/og-wordpress-vs-custom.jpg"],
+    "author": { "@type": "Organization", "name": "Saraha Developers", "url": "https://sarahadevelopers.co.ke/" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Saraha Developers",
+      "logo": { "@type": "ImageObject", "url": "https://sarahadevelopers.co.ke/saraha-developers-favicon.webp" }
+    },
+    "datePublished": "2026-02-13",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-KE"
+  }
+  </script>
+
+  <!-- Schema: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sarahadevelopers.co.ke/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sarahadevelopers.co.ke/blogs.html" },
+      { "@type": "ListItem", "position": 3, "name": "WordPress vs Custom (Kenya)", "item": "https://sarahadevelopers.co.ke/blog/wordpress-vs-custom-kenya.html" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is WordPress good for SEO in Kenya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. WordPress can rank very well in Kenya if you use a clean theme, strong on-page SEO, fast hosting, image optimization and good content. Poorly built WordPress sites become slow and insecure, which hurts SEO."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I choose a custom-coded website instead of WordPress?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Choose custom when you need maximum speed, unique UX, special integrations (payments, dashboards, portals), strict security requirements, or you want a website that behaves like a product (not just pages)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which one is cheaper in Kenya: WordPress or custom?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WordPress is usually cheaper to launch, but costs can rise with premium themes, plugins, maintenance and security. Custom can cost more upfront but may reduce long-term plugin and performance issues depending on your needs."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="/index.html" class="logo">
+          <img src="/saraha-developers-favicon.webp" alt="Saraha Developers Ltd Logo" class="logo-img" />
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/technologies.html">Technologies</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/blogs.html" class="active">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobileMenu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="hero-content" style="text-align:center;">
+        <span class="badge">WordPress • Custom Code • Kenya</span>
+        <h1>WordPress vs Custom Website in Kenya (2026)</h1>
+        <p>Cost, speed, SEO, security, and scalability — choose the best option for your business (not hype).</p>
+
+        <div class="post-meta">
+          <span><i class="fa-regular fa-calendar"></i> Feb 13, 2026</span>
+          <span><i class="fa-regular fa-clock"></i> 9 min read</span>
+          <span><i class="fa-solid fa-location-dot"></i> Nairobi / Kenya</span>
+        </div>
+
+        <div class="hero-btns" style="margin-top: 26px;">
+          <a href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20help%20me%20choose%20between%20WordPress%20and%20a%20custom%20website%20in%20Kenya." class="btn btn-primary">
+            <i class="fa-brands fa-whatsapp"></i> Get Advice
+          </a>
+          <a href="#toc" class="btn btn-secondary">Jump to Checklist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section style="padding: 70px 0;">
+    <div class="container">
+      <div class="blog-wrap">
+
+        <!-- Article -->
+        <article class="article-card">
+          <p>
+            If you’re building a website in Kenya, you’ll hear two strong opinions:
+            <strong>“Just use WordPress”</strong> and <strong>“Custom code is always better.”</strong>
+            The truth is simpler: the best choice depends on what you’re building, your budget, and how fast you need to move.
+          </p>
+
+          <div class="callout">
+            <strong>Short answer:</strong> WordPress is best for fast launch + content updates.
+            Custom code is best for performance + unique functionality + product-like experiences.
+          </div>
+
+          <h2 id="quick">1) Quick comparison (Kenya context)</h2>
+          <div class="compare" aria-label="WordPress vs Custom in Kenya">
+            <div class="compare-row compare-head">
+              <div class="compare-cell"><strong>Factor</strong></div>
+              <div class="compare-cell"><strong>WordPress</strong></div>
+              <div class="compare-cell"><strong>Custom Website</strong></div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Launch speed</strong></div>
+              <div class="compare-cell"><span class="pill good">Fast</span> 3–14 days for many business sites</div>
+              <div class="compare-cell"><span class="pill mid">Moderate</span> 2–6+ weeks depending on scope</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Upfront cost (typical)</strong></div>
+              <div class="compare-cell"><span class="pill good">Lower</span> cheaper to start</div>
+              <div class="compare-cell"><span class="pill mid">Higher</span> more build time</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>SEO potential</strong></div>
+              <div class="compare-cell"><span class="pill good">High</span> if optimized (theme, speed, content)</div>
+              <div class="compare-cell"><span class="pill good">High</span> if technical SEO is done right</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Speed / Core Web Vitals</strong></div>
+              <div class="compare-cell"><span class="pill mid">Depends</span> can be fast, can be slow if plugin-heavy</div>
+              <div class="compare-cell"><span class="pill good">Best</span> more control for performance</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Security</strong></div>
+              <div class="compare-cell"><span class="pill warn">Needs care</span> updates + strong hosting + hardening</div>
+              <div class="compare-cell"><span class="pill good">Controlled</span> fewer plugin risks (if built well)</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Editing content</strong></div>
+              <div class="compare-cell"><span class="pill good">Easy</span> non-technical staff can update</div>
+              <div class="compare-cell"><span class="pill mid">Depends</span> can be easy with a CMS, otherwise dev help</div>
+            </div>
+
+            <div class="compare-row">
+              <div class="compare-cell"><strong>Special features</strong></div>
+              <div class="compare-cell"><span class="pill mid">Plugins</span> quick, but can get messy</div>
+              <div class="compare-cell"><span class="pill good">Flexible</span> portals, dashboards, custom workflows</div>
+            </div>
+          </div>
+
+          <h2 id="wordpress">2) When WordPress is the best choice</h2>
+          <p>WordPress is a smart option when you want to move fast and keep things simple:</p>
+          <ul>
+            <li>Business websites (company profile, services, contact, portfolio).</li>
+            <li>Blogs and content marketing (frequent posting).</li>
+            <li>Landing pages for ads and campaigns.</li>
+            <li>Small-to-medium e-commerce (if managed properly, not plugin overload).</li>
+            <li>You need non-technical editing (staff updates pages easily).</li>
+          </ul>
+
+          <div class="callout">
+            <strong>WordPress tip (Kenya):</strong> Most “WordPress is slow” problems come from cheap hosting, huge images,
+            heavy themes, and too many plugins — not WordPress itself.
+          </div>
+
+          <h2 id="custom">3) When a custom website is the best choice</h2>
+          <p>Go custom when your website is more like a product than a brochure:</p>
+          <ul>
+            <li>You need a <strong>portal</strong> (students, staff, clients, members).</li>
+            <li>You need <strong>dashboards</strong>, admin workflows, approvals, roles.</li>
+            <li>You need <strong>integrations</strong> (M-Pesa logic, CRMs, internal tools, deliveries).</li>
+            <li>You want <strong>maximum speed</strong> and full control (Core Web Vitals).</li>
+            <li>Your design/UX must be unique (premium brand experience).</li>
+          </ul>
+
+          <h2 id="cost">4) Cost in Kenya: what people forget</h2>
+          <p>It’s not just “build cost”. It’s also:</p>
+          <ul>
+            <li><strong>Maintenance:</strong> updates, backups, security, small fixes.</li>
+            <li><strong>Hosting:</strong> cheap hosting can kill speed and SEO.</li>
+            <li><strong>Plugins / licenses:</strong> WordPress sites often add premium tools over time.</li>
+            <li><strong>Support:</strong> who fixes it when it breaks?</li>
+          </ul>
+
+          <h2 id="decision">5) Decision checklist (pick the right option in 2 minutes)</h2>
+          <div class="checklist">
+            <div class="check-item"><i class="fa-solid fa-check"></i><div><strong>Choose WordPress</strong> if you want to launch fast, update content often, and your site is mostly pages + blog.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div><strong>Choose Custom</strong> if you need portals/dashboards, custom workflows, special integrations, or maximum performance control.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div><strong>Either option can rank on Google</strong> — SEO depends on speed, content, structure, and credibility.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div><strong>Don’t choose “cheap”</strong> — choose a build that matches your business goal (leads, sales, automation).</div></div>
+          </div>
+
+          <h2 id="faq">FAQs</h2>
+          <div class="faq">
+            <details>
+              <summary>Is WordPress good for SEO in Kenya?</summary>
+              <p>Yes. WordPress can rank very well if the site is fast, mobile-friendly, well-structured, and has consistent content + backlinks. Bad themes/plugins and cheap hosting can ruin performance.</p>
+            </details>
+            <details>
+              <summary>Can I start with WordPress and move to custom later?</summary>
+              <p>Yes. Many businesses start with WordPress for speed, then move to custom when they need portals, dashboards, or heavy automation. Plan your content and SEO properly so migration is smooth.</p>
+            </details>
+            <details>
+              <summary>Which is better for e-commerce in Kenya?</summary>
+              <p>For small-to-medium stores, WordPress + WooCommerce can work well if optimized. For high-scale stores, unique checkout flows, or complex delivery and payments logic, custom is usually better.</p>
+            </details>
+          </div>
+
+          <div class="callout">
+            <strong>Want the right recommendation for your business?</strong><br />
+            Share your goal (leads, e-commerce, portal, automation) and we’ll recommend the smartest approach.
+            <div style="margin-top: 12px;">
+              <a class="btn btn-primary" href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20I%20need%20help%20choosing%20between%20WordPress%20and%20custom%20for%20my%20website%20in%20Kenya.%20My%20business%20is%3A%20">
+                WhatsApp for Advice
+              </a>
+              <a class="btn btn-secondary" href="/contact.html" style="margin-left: 10px;">Request a Call</a>
+            </div>
+          </div>
+
+          <!-- Author -->
+          <div class="author-box">
+            <div class="avatar"><i class="fa-solid fa-pen-nib"></i></div>
+            <div>
+              <p><strong>Written by Saraha Developers</strong></p>
+              <p>Web design, SEO, e-commerce & custom systems for Kenyan businesses. Call/WhatsApp: <a href="tel:+254723562484">+254 723 562 484</a></p>
+            </div>
+          </div>
+
+          <!-- Related -->
+          <h2 style="margin-top: 34px;">Related posts</h2>
+          <div class="related">
+            <a href="/blog/how-much-does-a-website-cost-in-kenya.html">
+              <strong>How Much Does a Website Cost in Kenya?</strong>
+              <div style="opacity:.85; margin-top:6px;">Pricing breakdown + what affects cost.</div>
+            </a>
+            <a href="/blog/how-to-build-an-online-store-that-converts-in-kenya.html">
+              <strong>How to Build an Online Store That Converts in Kenya</strong>
+              <div style="opacity:.85; margin-top:6px;">Checkout, trust and M-Pesa best practices.</div>
+            </a>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="toc" id="toc">
+          <h3>On this page</h3>
+          <a href="#quick">1) Quick comparison</a>
+          <a href="#wordpress">2) When WordPress wins</a>
+          <a href="#custom">3) When custom wins</a>
+          <a href="#cost">4) Hidden costs</a>
+          <a href="#decision">5) Decision checklist</a>
+          <a href="#faq">FAQs</a>
+
+          <div style="margin-top: 16px;">
+            <a class="btn btn-primary" style="width:100%; text-align:center;"
+              href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20I%20want%20advice%20on%20WordPress%20vs%20custom%20website%20in%20Kenya.">
+              WhatsApp Us
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" style="padding: 80px 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Need the Right Website Strategy?</h2>
+        <p>We build fast WordPress sites and high-performance custom websites — whichever fits your goals best.</p>
+        <a href="/contact.html" class="btn btn-primary">Request a Proposal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Saraha Developers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.getElementById("navLinks");
+    if (mobileMenu && navLinks) {
+      mobileMenu.addEventListener("click", () => navLinks.classList.toggle("active"));
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary SEO -->
+    <title>Blog | Saraha Developers — Web Design, Software & SEO Tips in Kenya</title>
+    <meta
+      name="description"
+      content="Read Saraha Developers blog for practical tips on web design, SEO, e-commerce, software development and digital strategy for businesses in Nairobi and across Kenya."
+    />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="author" content="Saraha Developers" />
+    <link rel="canonical" href="https://sarahadevelopers.co.ke/blogs.html" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#0b1220" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/saraha-developers-favicon.webp" type="image/webp" />
+    <link rel="apple-touch-icon" href="/saraha-developers-favicon.webp" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Saraha Developers" />
+    <meta property="og:title" content="Saraha Developers Blog | Web Design, Software & SEO in Kenya" />
+    <meta
+      property="og:description"
+      content="Actionable website and SEO tips for Kenyan businesses — design, performance, e-commerce, and growth."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sarahadevelopers.co.ke/blogs.html" />
+    <meta property="og:image" content="https://sarahadevelopers.co.ke/assets/og-blog.jpg" />
+    <meta property="og:image:secure_url" content="https://sarahadevelopers.co.ke/assets/og-blog.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Saraha Developers Blog" />
+    <meta property="og:locale" content="en_KE" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Saraha Developers Blog" />
+    <meta
+      name="twitter:description"
+      content="Web design, SEO and software insights for businesses in Kenya."
+    />
+    <meta name="twitter:image" content="https://sarahadevelopers.co.ke/assets/og-blog.jpg" />
+    <meta name="twitter:image:alt" content="Saraha Developers Blog" />
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons (non-blocking) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    </noscript>
+
+    <!-- CSS -->
+    <style>
+      :root {
+        --navy: #0a1a3e;
+        --blue: #0077ff;
+        --white: #f4f7fa;
+        --gray: #4b5563;
+        --emerald: #00c46c;
+        --light-blue: rgba(0, 119, 255, 0.1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Jost", sans-serif;
+        background-color: var(--white);
+        color: var(--gray);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #00e6a4;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 14px 32px;
+        border-radius: 4px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .btn-primary {
+        background-color: #00e6a4;
+        color: white;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #0055cc;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 119, 255, 0.2);
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        color: var(--navy);
+        border: 2px solid var(--navy);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--navy);
+        color: white;
+      }
+
+      section {
+        padding: 100px 0;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .section-header h2:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, var(--blue), var(--emerald));
+        border-radius: 2px;
+      }
+
+      .section-header p {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+      }
+
+      /* Header & Navigation */
+      header {
+        background-color: transparent;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: scale(1.02);
+      }
+
+      .logo img {
+        height: 150px;
+        width: auto;
+        object-fit: contain;
+        display: block;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-links li {
+        margin-left: 30px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        transition: color 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a:hover {
+        color: var(--blue);
+      }
+
+      .nav-links a.active {
+        color: var(--blue);
+      }
+
+      .nav-links a.active:after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--blue);
+      }
+
+      .mobile-menu {
+        display: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      /* Hero */
+      .hero {
+        position: relative;
+        background: url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=60&w=1920")
+          center/cover no-repeat;
+        color: white;
+        padding: 180px 0 160px;
+        overflow: hidden;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(10, 26, 62, 0.85), rgba(0, 0, 0, 0.55));
+        z-index: 1;
+      }
+
+      .hero-content {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero h1 {
+        font-size: 3.2rem;
+        color: #00e6a4;
+        margin-bottom: 18px;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1s ease forwards 0.4s;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 32px;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1s ease forwards 0.7s;
+      }
+
+      .hero-btns {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-wrap: wrap;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1s ease forwards 1s;
+      }
+
+      .hero .btn-secondary {
+        color: white;
+        border-color: white;
+      }
+
+      .hero .btn-secondary:hover {
+        background-color: white;
+        color: var(--navy);
+      }
+
+      .hero-shapes {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .shape {
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          rgba(0, 119, 255, 0.12) 0%,
+          rgba(0, 196, 108, 0.12) 100%
+        );
+      }
+
+      .shape-1 {
+        width: 320px;
+        height: 320px;
+        top: -160px;
+        right: -120px;
+        animation: float 20s infinite ease-in-out;
+      }
+
+      .shape-2 {
+        width: 220px;
+        height: 220px;
+        bottom: -70px;
+        left: -70px;
+        animation: float 15s infinite ease-in-out reverse;
+      }
+
+      /* Blog Layout */
+      .blog-layout {
+        display: grid;
+        grid-template-columns: 1.6fr 0.7fr;
+        gap: 30px;
+        align-items: start;
+      }
+
+      .blog-tools {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+      }
+
+      .search {
+        flex: 1;
+        min-width: 240px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 12px 14px;
+      }
+
+      .search i {
+        color: var(--blue);
+      }
+
+      .search input {
+        border: none;
+        outline: none;
+        width: 100%;
+        font-family: inherit;
+        font-size: 1rem;
+        color: var(--gray);
+      }
+
+      .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 18px 0 26px;
+      }
+
+      .chip {
+        padding: 10px 16px;
+        border: 1px solid #e5e7eb;
+        border-radius: 999px;
+        background: white;
+        cursor: pointer;
+        transition: 0.25s;
+        font-weight: 400;
+      }
+
+      .chip:hover {
+        background: var(--light-blue);
+        border-color: var(--blue);
+      }
+
+      .chip.active {
+        background: #00e6a4;
+        color: white;
+        border-color: #00e6a4;
+      }
+
+      .featured-post {
+        background: black;
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        margin-bottom: 28px;
+      }
+
+      .featured-media {
+        width: 100%;
+        height: 260px;
+        background: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=60&w=1600")
+          center/cover no-repeat;
+      }
+
+      .featured-body {
+        padding: 26px;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        color: rgba(255,255,255,0.8);
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        background: rgba(0, 230, 164, 0.12);
+        color: #00e6a4;
+        border: 1px solid rgba(0, 230, 164, 0.25);
+        border-radius: 999px;
+        font-size: 0.9rem;
+      }
+
+      .featured-body h3 {
+        color: #00e6a4;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+      }
+
+      .featured-body p {
+        color: rgba(255,255,255,0.9);
+        margin-bottom: 18px;
+      }
+
+      .post-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .post {
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 14px;
+        overflow: hidden;
+        transition: 0.25s;
+      }
+
+      .post:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.10);
+      }
+
+      .post-media {
+        height: 170px;
+        width: 100%;
+        background: #0b1220;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #00e6a4;
+        font-size: 2rem;
+      }
+
+      .post-body {
+        padding: 18px;
+      }
+
+      .post-body h3 {
+        font-size: 1.1rem;
+        color: var(--navy);
+        margin: 10px 0;
+      }
+
+      .post-body p {
+        font-size: 0.98rem;
+        margin-bottom: 14px;
+      }
+
+      .post-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+        font-size: 0.9rem;
+        color: #6b7280;
+      }
+
+      .readmore {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--blue);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .readmore:hover {
+        text-decoration: underline;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        position: sticky;
+        top: 110px;
+        display: grid;
+        gap: 20px;
+      }
+
+      .side-card {
+        background: black;
+        border-radius: 14px;
+        padding: 22px;
+        color: white;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      }
+
+      .side-card h3 {
+        color: #00e6a4;
+        margin-bottom: 12px;
+      }
+
+      .side-card p {
+        opacity: 0.9;
+        margin-bottom: 14px;
+      }
+
+      .side-list {
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+
+      .side-list a {
+        color: rgba(255,255,255,0.9);
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 10px 12px;
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 10px;
+        transition: 0.25s;
+      }
+
+      .side-list a:hover {
+        border-color: rgba(0, 230, 164, 0.35);
+        background: rgba(0, 230, 164, 0.07);
+      }
+
+      .pill {
+        background: rgba(255,255,255,0.10);
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 0.85rem;
+      }
+
+      /* Newsletter CTA */
+      .newsletter {
+        background: linear-gradient(135deg, var(--navy) 0%, #1a2d5e 100%);
+        color: white;
+        text-align: center;
+        padding: 80px 0;
+      }
+
+      .newsletter h2 {
+        color: #00e6a4;
+        margin-bottom: 12px;
+      }
+
+      .newsletter p {
+        max-width: 720px;
+        margin: 0 auto 22px;
+        opacity: 0.9;
+      }
+
+      .newsletter-form {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .newsletter-form input {
+        width: min(420px, 100%);
+        padding: 14px 14px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-family: inherit;
+      }
+
+      /* Footer */
+      footer {
+        background-color: black;
+        color: white;
+        padding: 70px 0 30px;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 50px;
+      }
+
+      .footer-col h3 {
+        color: var(--emerald);
+        margin-bottom: 25px;
+        font-size: 1.3rem;
+        position: relative;
+      }
+
+      .footer-col h3:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background-color: #00e6a4;
+      }
+
+      .footer-col p {
+        margin-bottom: 20px;
+        opacity: 0.8;
+      }
+
+      .footer-links {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 12px;
+      }
+
+      .footer-links a {
+        color: white;
+        text-decoration: none;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+      }
+
+      .footer-links a:hover {
+        opacity: 1;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social-link {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .social-link:hover {
+        background-color: var(--blue);
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        opacity: 0.7;
+        font-size: 0.9rem;
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(5deg);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 992px) {
+        .blog-layout {
+          grid-template-columns: 1fr;
+        }
+        .sidebar {
+          position: relative;
+          top: 0;
+        }
+        .footer-content {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: black;
+          flex-direction: column;
+          padding: 20px;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-links.active {
+          display: flex;
+        }
+
+        .nav-links li {
+          margin: 10px 0;
+        }
+
+        .mobile-menu {
+          display: block;
+        }
+
+        .mobile-menu i {
+          color: white;
+        }
+
+        .hero h1 {
+          font-size: 2.3rem;
+        }
+
+        .hero-btns {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .hero-btns .btn {
+          width: 100%;
+          max-width: 280px;
+        }
+
+        .section-header h2 {
+          font-size: 2rem;
+        }
+
+        .footer-content {
+          grid-template-columns: 1fr;
+        }
+
+        .post-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+    <!-- Schema: Blog + ItemList (replace URLs after you create single post pages) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://sarahadevelopers.co.ke/#org",
+          "name": "Saraha Developers",
+          "url": "https://sarahadevelopers.co.ke/",
+          "logo": "https://sarahadevelopers.co.ke/saraha-developers-favicon.webp",
+          "sameAs": [
+            "https://www.instagram.com/sarahadevelopers/",
+            "https://www.linkedin.com/in/charles-karanja-0b4b15223/"
+          ]
+        },
+        {
+          "@type": "Blog",
+          "@id": "https://sarahadevelopers.co.ke/blogs.html#blog",
+          "url": "https://sarahadevelopers.co.ke/blogs.html",
+          "name": "Saraha Developers Blog",
+          "description": "Web design, SEO, e-commerce and software development insights for businesses in Kenya.",
+          "publisher": { "@id": "https://sarahadevelopers.co.ke/#org" }
+        },
+        {
+  "@type": "ListItem",
+  "position": 4,
+  "name": "Web Design in Kitengela: Costs, Timelines & What You Get (2026)",
+  "url": "https://sarahadevelopers.co.ke/blog/web-design-kitengela.html"
+},
+
+        {
+          "@type": "ItemList",
+          "name": "Latest Posts",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "How to Make Your Website Rank on Google in Kenya (2026 Checklist)",
+              "url": "https://sarahadevelopers.co.ke/blog/how-to-rank-on-google-kenya.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Website Design Pricing in Kenya: What You’re Really Paying For",
+              "url": "https://sarahadevelopers.co.ke/blog/website-design-pricing-kenya.html"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Best Practices for Fast Websites: Core Web Vitals Made Simple",
+              "url": "https://sarahadevelopers.co.ke/blog/core-web-vitals-kenya.html"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img
+              src="saraha-developers-favicon.webp"
+              alt="Saraha Developers Ltd Logo"
+              class="logo-img"
+            />
+          </a>
+
+          <ul class="nav-links" id="navLinks">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blogs.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="mobile-menu" id="mobileMenu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <h1>Saraha Developers Blog</h1>
+          <p>SEO • Web Design • E-commerce • Software — actionable guides for Kenyan businesses.</p>
+          <div class="hero-btns">
+            <a href="#latest" class="btn btn-primary">Read Latest Posts</a>
+            <a href="contact.html" class="btn btn-secondary">Build With Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="latest">
+  <div class="container">
+    <div class="section-header">
+      <h2>Latest Articles</h2>
+      <p>
+        Actionable SEO, web design and software insights — plus Nairobi, Kitengela & Ruiru guides to help
+        your business rank on Google, load fast, and convert visitors into leads.
+      </p>
+    </div>
+
+    <div class="blog-layout">
+      <!-- Main -->
+      <main>
+        <div class="blog-tools">
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search (e.g. 'Nairobi SEO', 'pricing', 'WordPress vs custom', 'Google Maps')..."
+            />
+          </div>
+          <a class="btn btn-primary" href="contact.html">Get a Quote</a>
+        </div>
+
+        <!-- Filters: Service + Buyer Intent + Locations -->
+        <div class="chip-row" id="chipRow">
+          <button class="chip active" data-filter="all">All</button>
+
+          <!-- Core categories -->
+          <button class="chip" data-filter="seo">SEO</button>
+          <button class="chip" data-filter="web-design">Web Design</button>
+          <button class="chip" data-filter="performance">Performance</button>
+          <button class="chip" data-filter="ecommerce">E-commerce</button>
+          <button class="chip" data-filter="software">Software</button>
+
+          <!-- Buyer-intent (high converting) -->
+          <button class="chip" data-filter="pricing">Pricing</button>
+          <button class="chip" data-filter="comparisons">Comparisons</button>
+          <button class="chip" data-filter="case-studies">Case Studies</button>
+          <button class="chip" data-filter="local-seo">Google Maps</button>
+
+          <!-- Locations -->
+          <button class="chip" data-filter="nairobi">Nairobi</button>
+          <button class="chip" data-filter="kitengela">Kitengela</button>
+          <button class="chip" data-filter="ruiru">Ruiru</button>
+          <button class="chip" data-filter="athi-river">Athi River</button>
+          <button class="chip" data-filter="machakos">Machakos</button>
+          <button class="chip" data-filter="kitui">Kitui</button>
+        </div>
+
+        <!-- Featured: Pillar post (high authority) -->
+        <article
+          class="featured-post"
+          data-category="seo nairobi local-seo"
+          data-title="Best SEO Company in Nairobi (2026): How to Choose + What Actually Works"
+        >
+          <div class="featured-media" role="img" aria-label="Best SEO company in Nairobi guide"></div>
+          <div class="featured-body">
+            <div class="meta">
+              <span class="badge"><i class="fa-solid fa-star"></i> Featured</span>
+              <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+              <span><i class="fa-regular fa-clock"></i> 8 min read</span>
+            </div>
+
+            <h3>Best SEO Company in Nairobi (2026): How to Choose + What Actually Works</h3>
+            <p>
+              A clear buyer’s guide to hiring the right SEO team in Nairobi — local SEO, technical SEO,
+              content strategy, timelines, and the red flags to avoid.
+            </p>
+
+            <a class="btn btn-primary" href="blog/best-seo-company-nairobi.html">Read the Guide</a>
+          </div>
+        </article>
+
+        <!-- Posts Grid -->
+        <div class="post-grid" id="postGrid">
+          <!-- EXISTING (upgrade links to real blog pages when ready) -->
+          <article
+            class="post"
+            data-category="pricing web-design nairobi"
+            data-title="Website Design Pricing in Kenya: What You’re Really Paying For"
+          >
+            <div class="post-media"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 5 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Pricing</span>
+              </div>
+              <h3>Website Design Pricing in Kenya: What You’re Really Paying For</h3>
+              <p>Domain, hosting, UI/UX, SEO, content, security & support — and how to pick the right package.</p>
+              <a class="readmore" href="blog/website-design-pricing-kenya.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article
+            class="post"
+            data-category="performance seo"
+            data-title="Best Practices for Fast Websites: Core Web Vitals Made Simple"
+          >
+            <div class="post-media"><i class="fa-solid fa-gauge-high"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Performance</span>
+              </div>
+              <h3>Best Practices for Fast Websites: Core Web Vitals Made Simple</h3>
+              <p>Image optimization, caching, minification, hosting and real fixes to boost speed and UX.</p>
+              <a class="readmore" href="blog/core-web-vitals-kenya.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article
+            class="post"
+            data-category="ecommerce nairobi"
+            data-title="How to Build an Online Store That Converts in Kenya"
+          >
+            <div class="post-media"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> E-commerce</span>
+              </div>
+              <h3>How to Build an Online Store That Converts in Kenya</h3>
+              <p>Product pages, trust signals, payments, WhatsApp checkout, delivery, and SEO fundamentals.</p>
+              <a class="readmore" href="blog/online-store-that-converts-kenya.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article
+            class="post"
+            data-category="software"
+            data-title="When Your Business Needs a Custom System (and When It Doesn’t)"
+          >
+            <div class="post-media"><i class="fa-solid fa-gears"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 5 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Software</span>
+              </div>
+              <h3>When Your Business Needs a Custom System (and When It Doesn’t)</h3>
+              <p>How to decide between off-the-shelf tools and custom software — and what to build first.</p>
+              <a class="readmore" href="blog/custom-system-vs-tools.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- NEW: Nairobi “Best of” + Service pages (authority + local intent) -->
+          <article
+            class="post"
+            data-category="web-design nairobi"
+            data-title="Best Web Design Company in Nairobi (2026): What to Look For"
+          >
+            <div class="post-media"><i class="fa-solid fa-award"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 7 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Nairobi</span>
+              </div>
+              <h3>Best Web Design Company in Nairobi (2026): What to Look For</h3>
+              <p>How to evaluate UI/UX, SEO, speed, security, support, and what “professional” really means.</p>
+              <a class="readmore" href="blog/best-web-design-company-nairobi.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article
+            class="post"
+            data-category="pricing nairobi"
+            data-title="Website Cost in Nairobi (2026): Full Breakdown + Packages"
+          >
+            <div class="post-media"><i class="fa-solid fa-money-bill-wave"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Pricing</span>
+              </div>
+              <h3>Website Cost in Nairobi (2026): Full Breakdown + Packages</h3>
+              <p>What impacts price (content, SEO, pages, integrations) and the safest packages for SMEs.</p>
+              <a class="readmore" href="blog/website-cost-nairobi.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- NEW: Comparisons (easy rankings + trust) -->
+          <article
+            class="post"
+            data-category="comparisons web-design"
+            data-title="WordPress vs Custom Website in Kenya: Which One Should You Choose?"
+          >
+            <div class="post-media"><i class="fa-solid fa-code-compare"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 7 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Comparison</span>
+              </div>
+              <h3>WordPress vs Custom Website in Kenya: Which One Should You Choose?</h3>
+              <p>Costs, speed, security, SEO control, and what’s best for Nairobi SMEs and growing brands.</p>
+              <a class="readmore" href="blog/wordpress-vs-custom-kenya.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article
+            class="post"
+            data-category="comparisons ecommerce"
+            data-title="Shopify vs WooCommerce in Kenya: Costs, Payments & Delivery"
+          >
+            <div class="post-media"><i class="fa-solid fa-scale-balanced"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Comparison</span>
+              </div>
+              <h3>Shopify vs WooCommerce in Kenya: Costs, Payments & Delivery</h3>
+              <p>Which platform fits Kenyan payments (M-Pesa), shipping, product management and SEO?</p>
+              <a class="readmore" href="blog/shopify-vs-woocommerce-kenya.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- NEW: Google Maps / Local SEO (high intent) -->
+          <article
+            class="post"
+            data-category="local-seo seo nairobi"
+            data-title="Google Maps SEO in Nairobi: Rank on Google Business Profile"
+          >
+            <div class="post-media"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Google Maps</span>
+              </div>
+              <h3>Google Maps SEO in Nairobi: Rank on Google Business Profile</h3>
+              <p>Reviews, categories, services, NAP consistency, citations and pages that boost map visibility.</p>
+              <a class="readmore" href="blog/google-maps-seo-nairobi.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- NEW: Case studies (authority + conversion) -->
+          <article
+            class="post"
+            data-category="case-studies web-design"
+            data-title="Case Study: Website Revamp That Improved Speed, Trust & Leads"
+          >
+            <div class="post-media"><i class="fa-solid fa-chart-simple"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Case Study</span>
+              </div>
+              <h3>Case Study: Website Revamp That Improved Speed, Trust & Leads</h3>
+              <p>What we changed (UI, SEO, speed, CTAs) and the exact checklist you can apply to your site.</p>
+              <a class="readmore" href="blog/case-study-website-revamp-kenya.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- Location pillars (Kitengela + Ruiru) -->
+          <article
+            class="post"
+            data-category="kitengela web-design pricing"
+            data-title="Web Design in Kitengela: Costs, Timelines & What You Get (2026)"
+          >
+            <div class="post-media"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Kitengela</span>
+              </div>
+              <h3>Web Design in Kitengela: Costs, Timelines & What You Get (2026)</h3>
+              <p>Pricing breakdown, what’s included, and how to choose a developer in Kitengela for a site that converts.</p>
+              <a class="readmore" href="blog/web-design-kitengela.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article
+            class="post"
+            data-category="kitengela local-seo seo"
+            data-title="Local SEO in Kitengela: Rank on Google Maps & Get Calls"
+          >
+            <div class="post-media"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Kitengela</span>
+              </div>
+              <h3>Local SEO in Kitengela: Rank on Google Maps & Get Calls</h3>
+              <p>Google Business Profile setup, review strategy and location pages that win “near me” searches.</p>
+              <a class="readmore" href="blog/local-seo-kitengela.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article
+            class="post"
+            data-category="ruiru web-design"
+            data-title="Website Design in Ruiru: What Works for Real Estate & SMEs"
+          >
+            <div class="post-media"><i class="fa-solid fa-building"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Ruiru</span>
+              </div>
+              <h3>Website Design in Ruiru: What Works for Real Estate & SMEs</h3>
+              <p>Layouts, SEO structure, WhatsApp CTAs and pages that generate leads for Ruiru-based businesses.</p>
+              <a class="readmore" href="blog/web-design-ruiru.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article
+            class="post"
+            data-category="ruiru local-seo seo"
+            data-title="Local SEO in Ruiru: Rank for 'Web Designer Near Me' Searches"
+          >
+            <div class="post-media"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Ruiru</span>
+              </div>
+              <h3>Local SEO in Ruiru: Rank for “Web Designer Near Me” Searches</h3>
+              <p>Local citations, service pages, reviews and on-page tweaks that improve map pack rankings.</p>
+              <a class="readmore" href="blog/local-seo-ruiru.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- Keep your other towns -->
+          <article
+            class="post"
+            data-category="athi-river local-seo seo"
+            data-title="Local SEO in Athi River: Rank on Google Maps & Get Leads"
+          >
+            <div class="post-media"><i class="fa-solid fa-map"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-solid fa-clock"></i> 6 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Athi River</span>
+              </div>
+              <h3>Local SEO in Athi River: Rank on Google Maps & Get Leads</h3>
+              <p>Google Business Profile, reviews, local citations and on-page fixes for Athi River “near me” searches.</p>
+              <a class="readmore" href="blog/local-seo-athi-river.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article
+            class="post"
+            data-category="machakos local-seo seo"
+            data-title="Google Business Profile Setup for Machakos: Step-by-Step"
+          >
+            <div class="post-media"><i class="fa-solid fa-store"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 5 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Machakos</span>
+              </div>
+              <h3>Google Business Profile Setup for Machakos: Step-by-Step</h3>
+              <p>Setup checklist + optimization tips to appear on Maps when people search services in Machakos.</p>
+              <a class="readmore" href="blog/google-business-machakos.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article
+            class="post"
+            data-category="kitui pricing web-design"
+            data-title="Affordable Website Design in Kitui for SMEs (2026 Guide)"
+          >
+            <div class="post-media"><i class="fa-solid fa-wallet"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 5 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Kitui</span>
+              </div>
+              <h3>Affordable Website Design in Kitui for SMEs (2026 Guide)</h3>
+              <p>What to pay for, what to avoid, and the cheapest setup that still ranks and looks professional.</p>
+              <a class="readmore" href="blog/web-design-kitui.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- Nairobi SEO services (keep as is, but tag properly) -->
+          <article
+            class="post"
+            data-category="seo nairobi"
+            data-title="SEO Services in Nairobi: What Actually Moves Rankings (2026)"
+          >
+            <div class="post-media"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="post-body">
+              <div class="post-meta">
+                <span><i class="fa-regular fa-calendar"></i> Feb 2026</span>
+                <span><i class="fa-regular fa-clock"></i> 7 min</span>
+                <span class="badge"><i class="fa-solid fa-tag"></i> Nairobi</span>
+              </div>
+              <h3>SEO Services in Nairobi: What Actually Moves Rankings (2026)</h3>
+              <p>On-page, technical SEO, local signals and content strategy that works in competitive Nairobi searches.</p>
+              <a class="readmore" href="blog/seo-services-nairobi.html">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Optional: Small SEO section (internal links + location relevance) -->
+        <div style="margin-top:28px; background:#fff; border:1px solid #e5e7eb; border-radius:14px; padding:18px;">
+          <h3 style="color:#0a1a3e; margin-bottom:8px;">Service Areas</h3>
+          <p style="margin-bottom:12px;">
+            Saraha Developers serves businesses in <strong>Nairobi</strong>, <strong>Kitengela</strong>, <strong>Ruiru</strong>,
+            <strong>Athi River</strong>, <strong>Machakos</strong> and <strong>Kitui</strong> with web design, SEO and software development.
+          </p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="readmore" href="services.html">Explore Services <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="readmore" href="portfolio.html">See Portfolio <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="readmore" href="contact.html">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Blog sidebar">
+        <div class="side-card">
+          <h3>Free Website Audit</h3>
+          <p>Send your website link — we’ll check SEO, speed and conversion issues and share quick fixes.</p>
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20please%20audit%20my%20website%3A%20"
+          >
+            WhatsApp Us
+          </a>
+        </div>
+
+        <div class="side-card">
+          <h3>Popular Topics</h3>
+          <ul class="side-list">
+            <li><a href="#latest" data-topic="local-seo">Google Maps & Local SEO <span class="pill">Maps</span></a></li>
+            <li><a href="#latest" data-topic="pricing">Website Pricing <span class="pill">Cost</span></a></li>
+            <li><a href="#latest" data-topic="comparisons">Comparisons (WordPress vs Custom) <span class="pill">VS</span></a></li>
+            <li><a href="#latest" data-topic="case-studies">Case Studies & Results <span class="pill">Proof</span></a></li>
+            <li><a href="#latest" data-topic="performance">Speed & Core Web Vitals <span class="pill">Speed</span></a></li>
+            <li><a href="#latest" data-topic="ecommerce">E-commerce Setup <span class="pill">Store</span></a></li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>Quick Links</h3>
+          <ul class="side-list">
+            <li><a href="services.html">Our Services <span class="pill">View</span></a></li>
+            <li><a href="portfolio.html">Portfolio <span class="pill">Work</span></a></li>
+            <li><a href="contact.html">Contact <span class="pill">Hire</span></a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Get Weekly Growth Tips</h2>
+        <p>Short, practical insights on SEO, websites and digital strategy — built for businesses in Kenya.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks! (Connect this to your backend later)');">
+          <input type="email" required placeholder="Enter your email" aria-label="Email address" />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>Saraha Developers</h3>
+            <p>
+              Digital Solutions Powered by African Innovation. We engineer scalable digital products that empower businesses across Africa to compete globally.
+            </p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/share/19pQfW1QYw/" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/bunibrands_ke?igsh=bjlzZ3l6Yjd4dHQz" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="services.html">Software Development</a></li>
+              <li><a href="services.html">Cloud & DevOps</a></li>
+              <li><a href="services.html">Data & Analytics</a></li>
+              <li><a href="services.html">Brand & Product Strategy</a></li>
+              <li><a href="services.html">Cybersecurity</a></li>
+              <li><a href="services.html">IT Consultancy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Company</h3>
+            <ul class="footer-links">
+              <li><a href="/">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="technologies.html">Careers</a></li>
+              <li><a href="blogs.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Locations</h3>
+            <ul class="footer-links">
+              <li><i class="fa-solid fa-location-pin"></i> <a href="https://maps.app.goo.gl/YoxrnVvyb2oun9Ey6">Raiciri House, Nairobi</a></li>
+              <li><i class="fa-solid fa-location-pin"></i> <a href="https://maps.app.goo.gl/mi5sutMGHqjdHAo3A">Shanbad House, Machakos Town</a></li>
+              <li><i class="fa-solid fa-location-pin"></i> <a href="https://maps.app.goo.gl/rBhtwFeH2mesbUkW7">Solana Junction, Nyahururu</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Saraha Developers. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu
+      const mobileMenu = document.getElementById("mobileMenu");
+      const navLinks = document.getElementById("navLinks");
+      mobileMenu?.addEventListener("click", () => navLinks.classList.toggle("active"));
+
+      // Blog filter + search (SEO-friendly because posts are still in HTML)
+      const chips = Array.from(document.querySelectorAll(".chip"));
+      const posts = Array.from(document.querySelectorAll(".post, .featured-post"));
+      const searchInput = document.getElementById("searchInput");
+
+      function applyFilters() {
+        const activeChip = document.querySelector(".chip.active");
+        const filter = activeChip?.getAttribute("data-filter") || "all";
+        const q = (searchInput?.value || "").trim().toLowerCase();
+
+        posts.forEach((p) => {
+          const category = (p.getAttribute("data-category") || "").toLowerCase();
+          const title = (p.getAttribute("data-title") || "").toLowerCase();
+          const text = (p.innerText || "").toLowerCase();
+
+          const matchesCategory = filter === "all" || category === filter;
+          const matchesSearch = !q || title.includes(q) || text.includes(q);
+
+          p.style.display = matchesCategory && matchesSearch ? "" : "none";
+        });
+      }
+
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((c) => c.classList.remove("active"));
+          chip.classList.add("active");
+          applyFilters();
+        });
+      });
+
+      searchInput?.addEventListener("input", applyFilters);
+
+      // Sidebar topic shortcuts
+      document.querySelectorAll("[data-topic]").forEach((a) => {
+        a.addEventListener("click", () => {
+          const topic = a.getAttribute("data-topic");
+          const chip = document.querySelector(`.chip[data-filter="${topic}"]`);
+          if (chip) chip.click();
+        });
+      });
+    </script>
+  </body>
+</html>

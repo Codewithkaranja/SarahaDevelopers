@@ -12,10 +12,37 @@
         padding: 0;
         box-sizing: border-box;
       }
+              /* Remove default link styles globally */
+a {
+  color: inherit;           /* Keep the current text color */
+  text-decoration: none;    /* Remove underline */
+  transition: color 0.3s;   /* Optional: smooth hover if you want */
+}
+
+/* Optional: keep them same on hover, focus, active */
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
 
       body {
         font-family: 'Jost', sans-serif;
-        background-color: var(--white);
+    background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.774),
+    rgba(0, 0, 0, 0.543)
+  ),
+  url("Saraha favicon.webp");
+
+background-repeat: no-repeat;   /* ✅ ensures it appears once */
+background-position: center;    /* ✅ centers the logo */
+background-size: contain;       /* ✅ keeps full logo visible */
+
+
+  
+
         color: var(--gray);
         line-height: 1.6;
         overflow-x: hidden;
@@ -106,8 +133,8 @@
 
       /* Header & Navigation */
       header {
-        background-color: black;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        background-color: transparent;
+        
         position: fixed;
         width: 100%;
         z-index: 1000;
@@ -120,14 +147,7 @@
         padding: 20px 0;
       }
 
-      .logo {
-        font-size: 1.8rem;
-        font-weight: 500;
-        color: white;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-      }
+     
 
       .logo span {
         color: #00e6a4;
@@ -137,6 +157,23 @@
         margin-right: 8px;
         color: var(--emerald);
       }
+      .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+.logo img {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
 
       .nav-links {
         display: flex;
@@ -149,7 +186,7 @@
 
       .nav-links a {
         text-decoration: none;
-        color: white;
+        color:white ;
         font-weight: 400;
         transition: color 0.3s ease;
         position: relative;

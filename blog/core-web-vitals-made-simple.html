@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Best Practices for Fast Websites: Core Web Vitals Made Simple (2026) | Saraha Developers</title>
+  <meta name="description" content="Core Web Vitals made simple for 2026: improve LCP, INP and CLS with practical steps (images, fonts, caching, JS, CSS, hosting). Build faster websites that rank on Google in Kenya — Nairobi, Kitengela & Ruiru." />
+  <meta name="keywords" content="core web vitals kenya, website speed optimization kenya, improve lcp inp cls, fast website best practices, pagespeed insights kenya, website speed nairobi, saraha developers" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <link rel="canonical" href="https://sarahadevelopers.co.ke/blog/core-web-vitals-made-simple.html" />
+
+  <!-- Theme / Favicons -->
+  <link rel="icon" href="/saraha-developers-favicon.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="/saraha-developers-favicon.webp" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Saraha Developers" />
+  <meta property="og:title" content="Best Practices for Fast Websites: Core Web Vitals Made Simple (2026)" />
+  <meta property="og:description" content="Improve LCP, INP and CLS with practical steps (images, fonts, caching, JS, CSS, hosting). Faster websites that rank better." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://sarahadevelopers.co.ke/blog/core-web-vitals-made-simple.html" />
+  <meta property="og:image" content="https://sarahadevelopers.co.ke/assets/og-core-web-vitals.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Core Web Vitals Made Simple (2026) | Saraha Developers" />
+  <meta name="twitter:description" content="Practical steps to improve LCP, INP, CLS and website speed for better SEO." />
+  <meta name="twitter:image" content="https://sarahadevelopers.co.ke/assets/og-core-web-vitals.jpg" />
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Re-use your main site CSS -->
+  <link rel="stylesheet" href="/index.css" />
+
+  <!-- Page Styles (matches your blog styling) -->
+  <style>
+    :root {
+      --navy: #0a1a3e;
+      --blue: #0077ff;
+      --white: #f4f7fa;
+      --gray: #4b5563;
+      --emerald: #00c46c;
+      --light-blue: rgba(0, 119, 255, 0.1);
+      --accent: #00e6a4;
+    }
+
+    .blog-hero {
+      position: relative;
+      background: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1920&q=60")
+        center/cover no-repeat;
+      color: white;
+      padding: 180px 0 140px;
+      overflow: hidden;
+    }
+    .blog-hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,.65);
+    }
+    .blog-hero .container { position: relative; z-index: 2; }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: .85rem;
+      margin-bottom: 14px;
+    }
+
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 14px;
+      opacity: .95;
+      font-size: .95rem;
+    }
+    .post-meta span {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .blog-wrap {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .article-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+
+    .article-card h2 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    .article-card h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    .article-card p, .article-card li {
+      color: var(--gray);
+      font-size: 1.03rem;
+    }
+    .article-card ul { margin: 12px 0 0 18px; }
+    .article-card li { margin-bottom: 10px; }
+
+    .callout {
+      margin-top: 18px;
+      background: rgba(0, 230, 164, .08);
+      border: 1px solid rgba(0, 230, 164, .25);
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .good-bad {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .box {
+      border-radius: 12px;
+      padding: 14px;
+      border: 1px solid rgba(0,0,0,.08);
+      background: rgba(0,0,0,.02);
+    }
+    .box strong { color: var(--navy); }
+
+    .metric-grid {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .metric {
+      border-radius: 12px;
+      padding: 16px;
+      background: #000;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .metric .kpi {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-top: 6px;
+    }
+    .metric p {
+      color: rgba(255,255,255,.88);
+      margin-top: 6px;
+      font-size: .95rem;
+    }
+
+    .toc {
+      background: #000;
+      color: #fff;
+      border-radius: 12px;
+      padding: 22px;
+      position: sticky;
+      top: 110px;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .toc h3 { color: var(--accent); margin-bottom: 12px; font-size: 1.2rem; }
+    .toc a {
+      color: #fff;
+      opacity: .9;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      font-size: .95rem;
+    }
+    .toc a:hover { opacity: 1; color: var(--blue); }
+
+    .checklist {
+      margin-top: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+    }
+    .check-item {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      gap: 10px;
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+      background: #fff;
+    }
+    .check-item:nth-child(odd) { background: rgba(0,0,0,.02); }
+    .check-item i { color: var(--emerald); margin-top: 2px; }
+
+    .author-box {
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,.08);
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(0,0,0,.05);
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .author-box .avatar {
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      background: #000;
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      font-size: 1.3rem;
+      flex: 0 0 auto;
+    }
+    .author-box p { margin: 0; }
+
+    .related {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .related a {
+      display: block;
+      padding: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.10);
+      transition: transform .2s ease;
+    }
+    .related a:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 230, 164, .35);
+    }
+
+    @media (max-width: 992px) {
+      .blog-wrap { grid-template-columns: 1fr; }
+      .toc { position: relative; top: 0; }
+      .metric-grid { grid-template-columns: 1fr; }
+      .good-bad { grid-template-columns: 1fr; }
+      .related { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Schema: BlogPosting (enhanced) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://sarahadevelopers.co.ke/blog/core-web-vitals-made-simple.html"
+    },
+    "headline": "Best Practices for Fast Websites: Core Web Vitals Made Simple (2026)",
+    "description": "Core Web Vitals made simple for 2026: improve LCP, INP and CLS with practical steps (images, fonts, caching, JS, CSS, hosting).",
+    "image": ["https://sarahadevelopers.co.ke/assets/og-core-web-vitals.jpg"],
+    "author": {
+      "@type": "Organization",
+      "name": "Saraha Developers",
+      "url": "https://sarahadevelopers.co.ke/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Saraha Developers",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sarahadevelopers.co.ke/saraha-developers-favicon.webp"
+      }
+    },
+    "datePublished": "2026-02-12",
+    "dateModified": "2026-02-13",
+    "articleSection": "Performance",
+    "about": ["Core Web Vitals", "Website Speed", "SEO"],
+    "keywords": "core web vitals kenya, website speed optimization, LCP INP CLS, performance SEO, Nairobi web design",
+    "inLanguage": "en-KE"
+  }
+  </script>
+
+  <!-- Schema: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sarahadevelopers.co.ke/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sarahadevelopers.co.ke/blogs.html" },
+      { "@type": "ListItem", "position": 3, "name": "Core Web Vitals Made Simple", "item": "https://sarahadevelopers.co.ke/blog/core-web-vitals-made-simple.html" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: LocalBusiness (authority + local intent) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Saraha Developers",
+    "url": "https://sarahadevelopers.co.ke/",
+    "image": "https://sarahadevelopers.co.ke/saraha-developers-favicon.webp",
+    "telephone": "+254723562484",
+    "areaServed": ["Nairobi", "Kitengela", "Ruiru", "Athi River", "Machakos", "Kitui"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "KE",
+      "addressLocality": "Nairobi"
+    },
+    "sameAs": [
+      "https://www.instagram.com/sarahadevelopers/",
+      "https://www.linkedin.com/in/charles-karanja-0b4b15223/"
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage (expanded) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do fast websites rank better on Google in Kenya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A faster website improves user experience and reduces bounce rate. Core Web Vitals are part of Google’s page experience signals, so speed improvements can support better SEO performance over time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are good Core Web Vitals scores for LCP, INP and CLS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As a practical target: LCP should be 2.5s or less, INP 200ms or less, and CLS 0.1 or less. These thresholds help measure loading speed, responsiveness and layout stability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What usually makes websites slow in Nairobi and across Kenya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Common causes include oversized images, heavy JavaScript, too many third-party scripts, slow hosting, missing caching, and layout shifts from un-sized images and fonts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to improve website speed and Core Web Vitals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Small wins (image compression, lazy loading, caching) can be done in a day. Larger improvements (removing heavy scripts, optimizing critical CSS, improving hosting) may take a few days depending on the site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Saraha Developers help with speed + SEO in Nairobi, Kitengela and Ruiru?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We provide performance audits, Core Web Vitals fixes, technical SEO and local SEO (Google Business Profile) for businesses in Nairobi, Kitengela, Ruiru and across Kenya."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="/index.html" class="logo">
+          <img src="/saraha-developers-favicon.webp" alt="Saraha Developers Ltd Logo" class="logo-img" />
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/technologies.html">Technologies</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/blogs.html" class="active">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobileMenu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge">Speed • SEO • Performance</span>
+        <h1>Best Practices for Fast Websites: Core Web Vitals Made Simple</h1>
+        <p>Understand LCP, INP and CLS (in plain language) + a practical checklist to make your website faster and rank better.</p>
+
+        <div class="post-meta">
+          <span><i class="fa-regular fa-calendar"></i> Feb 12, 2026</span>
+          <span><i class="fa-regular fa-clock"></i> 8 min read</span>
+          <span><i class="fa-solid fa-location-dot"></i> Nairobi • Kitengela • Ruiru</span>
+        </div>
+
+        <div class="hero-btns" style="margin-top: 26px;">
+          <a href="/contact.html" class="btn btn-primary"><i class="fa-solid fa-gauge-high"></i> Speed Audit</a>
+          <a href="#toc" class="btn btn-secondary">Jump to Checklist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section style="padding: 70px 0;">
+    <div class="container">
+      <div class="blog-wrap">
+
+        <!-- Article -->
+        <article class="article-card">
+          <p>
+            A fast website doesn’t just “feel better” — it brings more leads, keeps visitors longer, and improves your chances of ranking on Google.
+            Google measures speed + usability using <strong>Core Web Vitals</strong>. The good news: you don’t need to be a senior engineer to fix them.
+          </p>
+
+          <div class="callout">
+            <strong>Core Web Vitals = 3 user experience signals:</strong>
+            how fast the main content loads (<strong>LCP</strong>), how responsive the page feels (<strong>INP</strong>),
+            and how stable the layout is (<strong>CLS</strong>).
+          </div>
+
+          <!-- NEW: Local service area block -->
+          <div class="callout">
+            <strong>Serving Nairobi, Kitengela & Ruiru:</strong>
+            Saraha Developers helps businesses rank on Google with fast websites, local SEO and conversion-focused design.
+            <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+              <a class="btn btn-primary" href="/services.html">View Services</a>
+              <a class="btn btn-secondary" href="/portfolio.html">See Work</a>
+            </div>
+          </div>
+
+          <h2 id="cwv">1) Core Web Vitals (the simple explanation)</h2>
+
+          <div class="metric-grid">
+            <div class="metric">
+              <div><strong>LCP</strong> (Largest Contentful Paint)</div>
+              <div class="kpi">Good: ≤ 2.5s</div>
+              <p>How fast the biggest content (hero image/text) becomes visible.</p>
+            </div>
+            <div class="metric">
+              <div><strong>INP</strong> (Interaction to Next Paint)</div>
+              <div class="kpi">Good: ≤ 200ms</div>
+              <p>How fast your page responds after a user taps, clicks, or types.</p>
+            </div>
+            <div class="metric">
+              <div><strong>CLS</strong> (Cumulative Layout Shift)</div>
+              <div class="kpi">Good: ≤ 0.1</div>
+              <p>How much the page “jumps” while loading (annoying shifts).</p>
+            </div>
+          </div>
+
+          <h2 id="why">2) Why speed affects SEO (especially in Kenya)</h2>
+          <p>
+            Many users browse on mobile and sometimes on slower networks. If your site takes too long or shifts around,
+            people bounce — and Google learns that your page isn’t satisfying the search intent.
+          </p>
+
+          <div class="good-bad">
+            <div class="box">
+              <strong>Fast site wins:</strong>
+              <ul>
+                <li>More WhatsApp/call leads</li>
+                <li>Higher time on page</li>
+                <li>Better conversion rates</li>
+                <li>Stronger SEO signals over time</li>
+              </ul>
+            </div>
+            <div class="box">
+              <strong>Slow site costs you:</strong>
+              <ul>
+                <li>Higher bounce rate</li>
+                <li>Lost trust</li>
+                <li>Lower ad performance</li>
+                <li>Weaker rankings over time</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="lcp">3) Fix LCP (make the main content load fast)</h2>
+          <ul>
+            <li><strong>Compress images</strong> and use <strong>WebP</strong> — keep hero images optimized.</li>
+            <li><strong>Lazy-load below-the-fold images</strong> (don’t lazy-load the hero).</li>
+            <li>Use <strong>proper image sizes</strong> (don’t serve huge images to mobile).</li>
+            <li>Prefer <strong>fast hosting</strong> + caching (slow servers = slow LCP).</li>
+            <li>Preload the hero image if it’s critical.</li>
+          </ul>
+
+          <h2 id="inp">4) Fix INP (make the page feel responsive)</h2>
+          <ul>
+            <li>Reduce heavy JavaScript (remove unused scripts/plugins).</li>
+            <li>Defer non-critical scripts (<code>defer</code> for JS loaded in head).</li>
+            <li>Avoid long tasks: split big JS work into smaller chunks.</li>
+            <li>Minimize third-party scripts (chat widgets, trackers) unless necessary.</li>
+          </ul>
+
+          <h2 id="cls">5) Fix CLS (stop layout shifts)</h2>
+          <ul>
+            <li>Always set <strong>width</strong> and <strong>height</strong> on images (or use CSS <code>aspect-ratio</code>).</li>
+            <li>Reserve space for banners, embeds and iframes.</li>
+            <li>Load fonts safely (avoid sudden swaps that shift text).</li>
+            <li>Avoid injecting elements above content after load.</li>
+          </ul>
+
+          <h2 id="checklist">6) Fast website checklist (copy/paste)</h2>
+          <div class="checklist">
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Use WebP images + compress all hero images.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Lazy-load only images below the fold.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Minify CSS/JS and remove unused code.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Defer non-critical JavaScript.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Set width/height (or aspect-ratio) for images to prevent CLS.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Use caching + a reliable hosting plan.</div></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><div>Limit heavy third-party scripts.</div></div>
+          </div>
+
+          <!-- NEW: Internal link boosters -->
+          <h2 id="next">7) Next steps (recommended)</h2>
+          <ul>
+            <li><a href="/services.html">Explore our web design + SEO services</a> (deliverables and support).</li>
+            <li><a href="/portfolio.html">See recent projects</a> (real examples and layouts).</li>
+            <li><a href="/contact.html">Request a quote</a> (fast response on WhatsApp).</li>
+          </ul>
+
+          <div class="callout">
+            <strong>Want a speed audit?</strong><br />
+            We can run a full performance review (mobile + desktop), fix the bottlenecks, and improve your rankings.
+            <div style="margin-top: 12px;">
+              <a class="btn btn-primary" href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20please%20audit%20my%20website%20speed%20(Core%20Web%20Vitals)%20and%20recommend%20fixes.">
+                WhatsApp for a Speed Audit
+              </a>
+            </div>
+          </div>
+
+          <!-- FAQ (on-page content to match FAQ schema) -->
+          <h2 id="faq">8) FAQ</h2>
+          <h3>Do fast websites rank better on Google in Kenya?</h3>
+          <p>Speed improves user experience and reduces bounce rate. Core Web Vitals are part of Google’s page experience signals, so faster sites tend to perform better over time.</p>
+
+          <h3>What are good scores for LCP, INP and CLS?</h3>
+          <p>As a practical target: LCP ≤ 2.5s, INP ≤ 200ms, CLS ≤ 0.1. These thresholds measure loading speed, responsiveness and layout stability.</p>
+
+          <h3>Can you help with speed + SEO in Nairobi, Kitengela and Ruiru?</h3>
+          <p>Yes. We provide performance audits, Core Web Vitals fixes, technical SEO and local SEO (Google Business Profile) for businesses in Nairobi, Kitengela, Ruiru and across Kenya.</p>
+
+          <!-- Author -->
+          <div class="author-box">
+            <div class="avatar"><i class="fa-solid fa-pen-nib"></i></div>
+            <div>
+              <p><strong>Written by Saraha Developers</strong></p>
+              <p>Web design, SEO and software development for Kenyan businesses. Call/WhatsApp: <a href="tel:+254723562484">+254 723 562 484</a></p>
+            </div>
+          </div>
+
+          <!-- Related (upgraded with local pillars) -->
+          <h2 style="margin-top: 34px;">Related posts</h2>
+          <div class="related">
+            <a href="/blog/best-web-design-company-nairobi.html">
+              <strong>Best Web Design Company in Nairobi (2026): What to Look For</strong>
+              <div style="opacity:.85; margin-top:6px;">Buyer guide + red flags to avoid.</div>
+            </a>
+            <a href="/blog/google-maps-seo-nairobi.html">
+              <strong>Google Maps SEO in Nairobi: Rank on Google Business Profile</strong>
+              <div style="opacity:.85; margin-top:6px;">Local SEO steps to get calls and leads.</div>
+            </a>
+            <a href="/blog/web-design-kitengela.html">
+              <strong>Web Design in Kitengela: Costs, Timelines & What You Get</strong>
+              <div style="opacity:.85; margin-top:6px;">Local pricing + packages + FAQs.</div>
+            </a>
+            <a href="/blog/web-design-ruiru.html">
+              <strong>Website Design in Ruiru: What Works for Real Estate & SMEs</strong>
+              <div style="opacity:.85; margin-top:6px;">Layouts, CTAs and SEO structure that converts.</div>
+            </a>
+          </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="toc" id="toc">
+          <h3>On this page</h3>
+          <a href="#cwv">1) Core Web Vitals explained</a>
+          <a href="#why">2) Why speed affects SEO</a>
+          <a href="#lcp">3) Fix LCP</a>
+          <a href="#inp">4) Fix INP</a>
+          <a href="#cls">5) Fix CLS</a>
+          <a href="#checklist">6) Fast website checklist</a>
+          <a href="#next">7) Next steps</a>
+          <a href="#faq">8) FAQ</a>
+
+          <div style="margin-top: 16px;">
+            <a class="btn btn-primary" style="width:100%; text-align:center;"
+               href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20I%20need%20help%20improving%20Core%20Web%20Vitals%20(LCP%2C%20INP%2C%20CLS).">
+              WhatsApp Us
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" style="padding: 80px 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Want a Faster Website That Ranks Better?</h2>
+        <p>We optimize speed, Core Web Vitals, and SEO so your site loads fast on mobile and converts visitors into leads.</p>
+        <a href="/contact.html" class="btn btn-primary">Request Optimization</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Saraha Developers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.getElementById("navLinks");
+    if (mobileMenu && navLinks) {
+      mobileMenu.addEventListener("click", () => navLinks.classList.toggle("active"));
+    }
+  </script>
+</body>
+</html>

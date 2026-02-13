@@ -1,97 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Primary SEO Tags -->
-  <title>Portfolio | Saraha Developers — Website Design & Development in Nairobi, Kiambu, Kitui & Makueni</title>
+  <!-- Primary SEO -->
+  <title>Portfolio | Saraha Developers | Web Design & Software Development in Nairobi</title>
+  <meta
+    name="description"
+    content="Explore Saraha Developers’ portfolio: high-performance websites, e-commerce platforms, and custom systems built for businesses across Nairobi and Kenya. Modern, fast, and SEO-ready projects."
+  />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="author" content="Saraha Developers" />
+  <link rel="canonical" href="https://sarahadevelopers.co.ke/portfolio.html" />
 
-  <meta name="description" content="Explore the Saraha Developers Portfolio — professional website design, software development, e-commerce systems, school portals, healthcare platforms, engineering websites and business websites built for clients across Nairobi, Kiambu, Kitui & Makueni. Modern, fast and SEO-optimized projects.">
+  <!-- Theme -->
+  <meta name="theme-color" content="#0b1220" />
 
-  <meta name="keywords" content="Saraha Developers portfolio, website development Nairobi, web design Kiambu, website designers Kitui, web developers Makueni, ecommerce websites Kenya, construction company website, law firm website Kenya, medical website Kenya, school website developers Kenya">
-
-  <link rel="canonical" href="https://www.sarahadevelopers.co.ke/portfolio" />
-
-  <!-- Location Targeting -->
-  <meta name="geo.region" content="KE-47, KE-22, KE-09, KE-14">
-  <meta name="geo.placename" content="Nairobi, Kiambu, Kitui, Makueni">
+  <!-- Favicons -->
+  <link rel="icon" href="/saraha-developers-favicon.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="/saraha-developers-favicon.webp" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Saraha Developers Portfolio | Best Website Design in Nairobi, Kiambu, Kitui & Makueni">
-  <meta property="og:description" content="See real professional websites designed by Saraha Developers — e-commerce, institutional, engineering, healthcare, business and school websites built for performance.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.sarahadevelopers.co.ke/portfolio">
-  <meta property="og:image" content="https://www.sarahadevelopers.co.ke/assets/og-portfolio.jpg">
+  <meta property="og:site_name" content="Saraha Developers" />
+  <meta property="og:title" content="Saraha Developers Portfolio | Websites & Systems Built in Kenya" />
+  <meta property="og:description" content="See real websites, online stores, and systems built by Saraha Developers—designed for performance and growth." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sarahadevelopers.co.ke/portfolio.html" />
+  <meta property="og:image" content="https://sarahadevelopers.co.ke/assets/og-portfolio.jpg" />
+  <meta property="og:image:secure_url" content="https://sarahadevelopers.co.ke/assets/og-portfolio.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Saraha Developers Portfolio" />
+  <meta property="og:locale" content="en_KE" />
 
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Saraha Developers | Portfolio">
-  <meta name="twitter:description" content="Explore high-quality websites we've designed across Kenya.">
-  <meta name="twitter:image" content="https://www.sarahadevelopers.co.ke/assets/og-portfolio.jpg">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Saraha Developers Portfolio" />
+  <meta name="twitter:description" content="Explore high-quality websites and systems we've built across Kenya." />
+  <meta name="twitter:image" content="https://sarahadevelopers.co.ke/assets/og-portfolio.jpg" />
+  <meta name="twitter:image:alt" content="Saraha Developers Portfolio" />
 
-  <!-- Fonts & Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Swiper CSS -->
+  <!-- Fonts -->
   <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
 
-  <!-- Main CSS -->
+  <!-- Icons (non-blocking) -->
+  <link
+    rel="preload"
+    as="style"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </noscript>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Page CSS -->
   <link rel="stylesheet" href="portfolio.css" />
 
-  <!-- Schema: Portfolio Page -->
+  <!-- Schema: Organization + WebPage + ItemList -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org/",
-    "@type": "ItemList",
-    "name": "Saraha Developers Portfolio",
-    "description": "A collection of professional websites designed by Saraha Developers for clients across Nairobi, Kiambu, Kitui and Makueni.",
-    "url": "https://www.sarahadevelopers.co.ke/portfolio",
-    "itemListElement": [
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "GreenHub Resort Website",
-        "url": "https://codewithkaranja.github.io/GreenHubResort/"
+        "@type": "Organization",
+        "@id": "https://sarahadevelopers.co.ke/#org",
+        "name": "Saraha Developers",
+        "url": "https://sarahadevelopers.co.ke/",
+        "logo": "https://sarahadevelopers.co.ke/saraha-developers-favicon.webp",
+        "sameAs": [
+          "https://www.instagram.com/sarahadevelopers/",
+          "https://www.linkedin.com/in/charles-karanja-0b4b15223/"
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Averiq University E-Learning Platform",
-        "url": "https://codewithkaranja.github.io/Averiquniversity/"
+        "@type": "WebPage",
+        "@id": "https://sarahadevelopers.co.ke/portfolio.html",
+        "url": "https://sarahadevelopers.co.ke/portfolio.html",
+        "name": "Saraha Developers Portfolio",
+        "description": "A collection of websites and systems built by Saraha Developers."
       },
       {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Kibellan Healthcare Platform",
-        "url": "https://kibellanuniversalsolutions.co.ke/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": "BuildSmart Africa Construction Portfolio",
-        "url": "https://codewithkaranja.github.io/Eng.Kelvin/"
+        "@type": "ItemList",
+        "name": "Saraha Developers Portfolio",
+        "url": "https://sarahadevelopers.co.ke/portfolio.html",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "GreenHub Resort Website", "url": "https://codewithkaranja.github.io/GreenHubResort/" },
+          { "@type": "ListItem", "position": 2, "name": "Averiq University E-Learning Platform", "url": "https://codewithkaranja.github.io/Averiquniversity/" },
+          { "@type": "ListItem", "position": 3, "name": "Kibellan Universal Solutions", "url": "https://kibellanuniversalsolutions.co.ke/" },
+          { "@type": "ListItem", "position": 4, "name": "BuildSmart Africa Construction Portfolio", "url": "https://codewithkaranja.github.io/Eng.Kelvin/" }
+        ]
       }
     ]
   }
   </script>
 </head>
 
+
+
   <body>
     <!-- Header -->
     <header>
       <div class="container">
         <nav class="navbar">
-          <a href="/" class="logo">
-            <i class="fas fa-globe-africa"></i>
-            Saraha<span>Developers</span>
-          </a>
+           <a href="index.html" class="logo">
+          <img
+            src="saraha-developers-favicon.webp"
+            alt="Saraha Developers Ltd Logo"
+            class="logo-img"
+          />
+        </a>
           <ul class="nav-links" id="navLinks">
             <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="technologies.html">Technologies</a></li>
             <li><a href="portfolio.html" class="active">Portfolio</a></li>
@@ -154,7 +187,7 @@
         <div class="case-grid">
           <div class="case-card" data-categories="hospitality">
             <div class="case-img">
-              <img src="greenhubscreenshotnew.png" alt="GreenHub" />
+              <img src="Saraha greenhubscreenshotnew.webp" alt="Saraha Developers Ltd. Image GreenHub" />
               <span class="case-tag">Hospitality</span>
             </div>
             <div class="case-content">
@@ -186,7 +219,7 @@
 
           <div class="case-card" data-categories="e-learning">
             <div class="case-img">
-              <img src="averiquniversityscreenshotnew.png" alt="kmtc" />
+              <img src="Saraha averiquniversityscreenshotnew.webp" alt="Saraha Developers Ltd. Image  kmtc" />
               <span class="case-tag">E-Learning</span>
             </div>
             <div class="case-content">
@@ -218,8 +251,8 @@
           <div class="case-card" data-categories="healthcare">
             <div class="case-img">
               <img
-                src="kibellanscreenshotnew.png"
-                alt="kibellanuniversalsolutions"
+                src="Saraha kibellanscreenshotnew.webp"
+                alt="Saraha Developers Ltd. Image kibellanuniversalsolutions"
               />
               <span class="case-tag">HealthCare</span>
             </div>
@@ -251,7 +284,7 @@
 
           <div class="case-card" data-categories="construction">
             <div class="case-img">
-              <img src="kelvinscreenshotnew.png" alt="engkelvin" />
+              <img src="Saraha kelvinscreenshotnew.webp" alt="Saraha Developers Ltd. Image engkelvin" />
               <span class="case-tag">Construction</span>
             </div>
             <div class="case-content">
@@ -281,7 +314,7 @@
           </div>
           <div class="case-card" data-categories="construction">
             <div class="case-img">
-              <img src="willis homepage.png" alt="engkelvin" />
+              <img src="musyoka mutinda screenshot.webp" alt="Saraha Developers Ltd. Image lawyers website" />
               <span class="case-tag">Musyoka & Mutinda Advocates</span>
             </div>
             <div class="case-content">
@@ -311,11 +344,11 @@
           </div>
           <div class="case-card" data-categories="construction">
             <div class="case-img">
-              <img src="geo-cart homepage.png" alt="engkelvin" />
-              <span class="case-tag">Geo-Cart Surveyors</span>
+              <img src="Geo-Ace Screenshot.webp" alt="Saraha Developers Ltd. Image Surveyors Website" />
+              <span class="case-tag">Geo-Ace Surveyors</span>
             </div>
             <div class="case-content">
-              <h3>Geo-Cart Surveyors</h3>
+              <h3>Geo-Ace Surveyors</h3>
               <p>
                 A surveying and mapping website with service listings, project
                 visuals, document request portal and inquiry automation.
@@ -331,7 +364,7 @@
                 </div>
               </div>
               <a
-                href="https://codewithkaranja.github.io/Geo-CartSurveyors/"
+                href="https://codewithkaranja.github.io/Geo-Ace-Surveyors/"
                 target="_blank"
                 class="btn btn-primary"
               >
@@ -342,7 +375,7 @@
 
           <div class="case-card" data-categories="construction">
             <div class="case-img">
-              <img src="drillsol(EA) homepage.png" alt="engkelvin" />
+              <img src="Saraha drillsol(EA) homepage.webp" alt="Saraha Developers Ltd. Image Drilling Company Website" />
               <span class="case-tag">Drilsol(EA)</span>
             </div>
             <div class="case-content">
@@ -374,7 +407,7 @@
 
           <div class="case-card" data-categories="construction">
             <div class="case-img">
-              <img src="covelyne homepage.png" alt="engkelvin" />
+              <img src="Saraha covelyne homepage.webp" alt="Saraha Developers Ltd. Beauty Training Institute Website" />
               <span class="case-tag">Covelyne Training Institute</span>
             </div>
             <div class="case-content">
@@ -405,8 +438,8 @@
           </div>
           <div class="case-card" data-categories="construction">
             <div class="case-img">
-              <img src="gamechanger homepage.png" alt="engkelvin" />
-              <span class="case-tag">Mp Kikuyu 2027</span>
+              <img src="Benson Muema Screenshot.webp" alt="Saraha Developers Ltd. Campaign Profile Website" />
+              <span class="case-tag">Mp Makueni 2027</span>
             </div>
             <div class="case-content">
               <h3>Political Campaign Profile</h3>
@@ -426,7 +459,7 @@
                 </div>
               </div>
               <a
-                href="https://codewithkaranja.github.io/stephen-kibathi--2027/"
+                href="https://bensonmuema.com/"
                 target="_blank"
                 class="btn btn-primary"
               >
@@ -437,7 +470,7 @@
 
           <div class="case-card" data-categories="branding">
             <div class="case-img">
-              <img src="bunibrandscreenshotnew.png" alt="buniBrands" />
+              <img src="Saraha bunibrandscreenshotnew.webp" alt="Saraha Developers Ltd. Branding Company Website" />
               <span class="case-tag">Branding</span>
             </div>
             <div class="case-content">
@@ -499,7 +532,7 @@
           <div class="case-card" data-categories="fintech">
             <div class="case-img">
               <!--  <i class="fas fa-mobile-alt"></i>-->
-              <img src="mpesadashboardscreenshot.png" alt="mpesa" />
+              <img src="mpesadashboardscreenshot.png" alt="Saraha Developers Ltd. Images Payment Intergration API" />
               <span class="case-tag">FinTech</span>
             </div>
             <div class="case-content">
@@ -527,7 +560,7 @@
           <div class="case-card" data-categories="ecommerce">
             <div class="case-img">
               <!--  <i class="fas fa-shopping-cart"></i>-->
-              <img src="kibellanproducts homepage.png" alt="kibellanhome" />
+              <img src="All Bales ScreenShot.webp" alt="Saraha Developers Ltd. E-Commerce Website " />
               <span class="case-tag">E-commerce</span>
             </div>
             <div class="case-content">
@@ -555,7 +588,7 @@
           <div class="case-card" data-categories="healthtech">
             <div class="case-img">
               <!--  <i class="fas fa-heartbeat"></i>-->
-              <img src="HMISscreenshot.png" alt="hmis" />
+              <img src="Saraha HMISscreenshot.webp" alt="Saraha Developers Ltd. images hmis" />
               <span class="case-tag">HealthTech</span>
             </div>
             <div class="case-content">
@@ -583,7 +616,7 @@
           <div class="case-card" data-categories="edtech">
             <div class="case-img">
               <!--  <i class="fas fa-graduation-cap"></i>-->
-              <img src="studyglade homepage.png" alt="studyglade" />
+              <img src="Saraha studyglade homepage.webp" alt="Saraha Developers Ltd. images online learning platform studyglade" />
               <span class="case-tag">EdTech</span>
             </div>
             <div class="case-content">
@@ -692,7 +725,7 @@
               "
             >
               <!--  <i class="fas fa-mobile-alt"></i>-->
-              <img src="mpesadashboardscreenshot.png" alt="mpesa" />
+              <img src="mpesadashboardscreenshot.png" alt="Saraha Developers Ltd. images Payment Integration API for mpesa" />
             </div>
           </div>
           <div class="featured-details">
@@ -750,114 +783,114 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide application-card">
-            <img src="apdk.jpg" alt="Agriculture" />
+            <img src="apdk.jpg" alt="Saraha Developers Ltd. images APDK logo" />
             <div class="application-content"></div>
           </div>
 
           <div class="swiper-slide application-card">
-            <img src="canada.png" alt="Livestock" />
+            <img src="canada.png" alt="Saraha Developers Ltd. images Canada Flag Logo" />
             <div class="application-content"></div>
           </div>
 
           <div class="swiper-slide application-card">
-            <img src="Court of Arms.png" alt="Domestic Use" />
+            <img src="Court of Arms.png" alt="Saraha Developers Ltd. images Court Of Arms Logo" />
             <div class="application-content"></div>
           </div>
 
           <div class="swiper-slide application-card">
-            <img src="daystar2.png" alt="Commercial Use" />
+            <img src="daystar2.png" alt="Saraha Developers Ltd. images DayStar University Logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="elma.png" alt="Domestic Use" />
+            <img src="elma.png" alt="Saraha Developers Ltd. images Elma Logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="equityafia.png" alt="Domestic Use" />
+            <img src="equityafia.png" alt="Saraha Developers Ltd. images Equity Afia Logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="Gelian.jpg" alt="Domestic Use" />
+            <img src="Gelian.jpg" alt="Saraha Developers Ltd. images Gelian Hotels logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="global fund.png" alt="Domestic Use" />
+            <img src="global fund.png" alt="Saraha Developers Ltd. images  global fund logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="goshen.png" alt="Domestic Use" />
+            <img src="goshen.png" alt="Saraha Developers Ltd. images Goshen logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="jitegemee.png" alt="Domestic Use" />
+            <img src="jitegemee.png" alt="Saraha Developers Ltd. images Jitegemee logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="kenhalogo.jpg" alt="Domestic Use" />
+            <img src="kenhalogo.jpg" alt="Saraha Developers Ltd. images Kenha Logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="kituicounty.jpg" alt="Domestic Use" />
+            <img src="kituicounty.jpg" alt="Saraha Developers Ltd. images Kitui County Logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="kmtc logo.png" alt="Domestic Use" />
+            <img src="kmtc logo.png" alt="Saraha Developers Ltd. images KMTC logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="machakos university.png" alt="Domestic Use" />
+            <img src="machakos university.png" alt="Saraha Developers Ltd. images Machakos University" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="machakosassembly.jpg" alt="Domestic Use" />
+            <img src="machakosassembly.jpg" alt="Saraha Developers Ltd. images Machakos County Assembly logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="mara specialist.jpg" alt="Domestic Use" />
+            <img src="mara specialist.jpg" alt="Saraha Developers Ltd. images Mara Specialist hospital logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="meda.png" alt="Domestic Use" />
+            <img src="meda.png" alt="Saraha Developers Ltd. images MEDA logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="migori.jpg" alt="Domestic Use" />
+            <img src="migori.jpg" alt="Saraha Developers Ltd. images Migori County Logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="navcdp logo.png" alt="Domestic Use" />
+            <img src="navcdp logo.png" alt="Saraha Developers Ltd. images Navcdp logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="redcrosskenya.jpg" alt="Domestic Use" />
+            <img src="redcrosskenya.jpg" alt="Saraha Developers Ltd. images redcross kenya logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="safaricom.png" alt="Domestic Use" />
+            <img src="safaricom.png" alt="Saraha Developers Ltd. images Safaricom logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="segal family.png" alt="Domestic Use" />
+            <img src="segal family.png" alt="Saraha Developers Ltd. images Segal family logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="Court of Arms.png" alt="Domestic Use" />
+            <img src="Court of Arms.png" alt="Saraha Developers Ltd. images Court of Arms logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="semara.png" alt="Domestic Use" />
+            <img src="semara.png" alt="Saraha Developers Ltd. images Semara Hotel Logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="Terre des hommes.png" alt="Domestic Use" />
+            <img src="Terre des hommes.png" alt="Saraha Developers Ltd. images Terre des hommes logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="makueni.jpg" alt="Domestic Use" />
+            <img src="makueni.jpg" alt="Saraha Developers Ltd. images Makueni County Logo" />
             <div class="application-content"></div>
           </div>
           <div class="swiper-slide application-card">
-            <img src="nairobiwomens.png" alt="Domestic Use" />
+            <img src="nairobiwomens.png" alt="Saraha Developers Ltd. images Nairobi Womens logo" />
             <div class="application-content"></div>
           </div>
         </div>

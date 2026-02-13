@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>When Your Business Needs a Custom System in Kenya (and When It Doesn’t) | Saraha Developers</title>
+  <meta name="description" content="Do you need a custom system in Kenya or an off-the-shelf tool? Learn when to build custom software, when not to, cost factors, real Kenyan examples, and a practical decision checklist." />
+  <meta name="keywords" content="custom system kenya, custom software kenya, build vs buy software, ERP Kenya, CRM Kenya, workflow automation Kenya, business system Nairobi, software development Kenya, Saraha Developers" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <link rel="canonical" href="https://sarahadevelopers.co.ke/blog/when-your-business-needs-a-custom-system.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/saraha-developers-favicon.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="/saraha-developers-favicon.webp" />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Saraha Developers" />
+  <meta property="og:title" content="When Your Business Needs a Custom System in Kenya (and When It Doesn’t)" />
+  <meta property="og:description" content="Build vs buy made simple: when custom software is worth it and when off-the-shelf tools are enough for Kenyan businesses." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://sarahadevelopers.co.ke/blog/when-your-business-needs-a-custom-system.html" />
+  <meta property="og:image" content="https://sarahadevelopers.co.ke/assets/og-custom-system.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="When Your Business Needs a Custom System in Kenya (Build vs Buy Guide)" />
+  <meta name="twitter:description" content="A practical guide for Kenyan businesses: when to build custom software, when to use existing tools, and how to decide smartly." />
+  <meta name="twitter:image" content="https://sarahadevelopers.co.ke/assets/og-custom-system.jpg" />
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/index.css" />
+
+  <!-- Styles -->
+  <style>
+    :root {
+      --navy: #0a1a3e;
+      --blue: #0077ff;
+      --white: #f4f7fa;
+      --gray: #4b5563;
+      --emerald: #00c46c;
+      --accent: #00e6a4;
+    }
+
+    .blog-hero {
+      position: relative;
+      background: url("https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1920&q=60")
+        center/cover no-repeat;
+      color: white;
+      padding: 180px 0 140px;
+      overflow: hidden;
+    }
+    .blog-hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,.7);
+    }
+    .blog-hero .container { position: relative; z-index: 2; }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: .85rem;
+      margin-bottom: 14px;
+    }
+
+    .post-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 14px;
+      opacity: .95;
+      font-size: .95rem;
+    }
+    .post-meta span {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      padding: 6px 12px;
+      border-radius: 999px;
+    }
+
+    .blog-wrap {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .article-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+
+    .article-card h2 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    .article-card h3 {
+      margin-top: 18px;
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    .article-card p, .article-card li {
+      color: var(--gray);
+      font-size: 1.03rem;
+    }
+
+    .article-card ul { margin: 12px 0 0 18px; }
+    .article-card li { margin-bottom: 10px; }
+
+    .callout {
+      margin-top: 18px;
+      background: rgba(0, 230, 164, .08);
+      border: 1px solid rgba(0, 230, 164, .25);
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .compare {
+      margin-top: 16px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+    }
+    .compare-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+    .compare-cell {
+      padding: 14px 16px;
+      background: #fff;
+    }
+    .compare-cell:nth-child(2) {
+      background: rgba(0,0,0,.02);
+      border-left: 1px solid rgba(0,0,0,.06);
+    }
+
+    .toc {
+      background: #000;
+      color: #fff;
+      border-radius: 12px;
+      padding: 22px;
+      position: sticky;
+      top: 110px;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .toc h3 { color: var(--accent); margin-bottom: 12px; }
+    .toc a {
+      color: #fff;
+      opacity: .9;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      font-size: .95rem;
+    }
+    .toc a:hover { opacity: 1; color: var(--blue); }
+
+    .author-box {
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,.08);
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(0,0,0,.05);
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .author-box .avatar {
+      width: 54px; height: 54px;
+      border-radius: 50%;
+      background: #000;
+      display: grid;
+      place-items: center;
+      color: var(--accent);
+      font-size: 1.3rem;
+    }
+
+    .related {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .related a {
+      display: block;
+      padding: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .related a:hover { transform: translateY(-2px); }
+
+    @media (max-width: 992px) {
+      .blog-wrap { grid-template-columns: 1fr; }
+      .toc { position: relative; top: 0; }
+      .compare-row { grid-template-columns: 1fr; }
+      .compare-cell:nth-child(2) { border-left: none; border-top: 1px solid rgba(0,0,0,.06); }
+      .related { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Schema: BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "When Your Business Needs a Custom System in Kenya (and When It Doesn’t)",
+    "description": "Do you need a custom system in Kenya or an off-the-shelf tool? Learn when to build custom software, when not to, cost factors, and a simple decision checklist.",
+    "author": {
+      "@type": "Organization",
+      "name": "Saraha Developers"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Saraha Developers",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sarahadevelopers.co.ke/saraha-developers-favicon.webp"
+      }
+    },
+    "datePublished": "2026-02-12",
+    "dateModified": "2026-02-13",
+    "inLanguage": "en-KE"
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="/index.html" class="logo">
+          <img src="/saraha-developers-favicon.webp" alt="Saraha Developers Ltd Logo" class="logo-img" />
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/blogs.html" class="active">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" id="mobileMenu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="blog-hero">
+    <div class="container" style="text-align:center;">
+      <span class="badge">Custom Software • Kenya • Build vs Buy</span>
+      <h1>When Your Business Needs a Custom System (and When It Doesn’t)</h1>
+      <p>Build vs buy explained simply for Kenyan businesses.</p>
+
+      <div class="post-meta">
+        <span><i class="fa-regular fa-calendar"></i> Feb 12, 2026</span>
+        <span><i class="fa-regular fa-clock"></i> 9 min read</span>
+        <span><i class="fa-solid fa-location-dot"></i> Nairobi • Kenya</span>
+      </div>
+
+      <div style="margin-top:26px;">
+        <a href="/contact.html" class="btn btn-primary">
+          <i class="fa-solid fa-gears"></i> Discuss a Custom System
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section style="padding:70px 0;">
+    <div class="container">
+      <div class="blog-wrap">
+
+        <article class="article-card">
+          <p>
+            Many Kenyan businesses start with WhatsApp, Excel, and a few apps.
+            That’s normal. But there comes a point where growth creates complexity —
+            and complexity demands structure.
+          </p>
+
+          <div class="callout">
+            <strong>Simple rule:</strong> If your system errors are costing you money,
+            you need better software — either optimized tools or a custom-built system.
+          </div>
+
+          <h2 id="custom">When you SHOULD build a custom system</h2>
+          <ul>
+            <li>You are losing money due to stock errors, missed orders, or payment confusion.</li>
+            <li>You manage multiple branches or teams.</li>
+            <li>You need role-based access (admin, cashier, manager, rider, etc.).</li>
+            <li>You require automation (SMS alerts, M-Pesa reconciliation, reports).</li>
+            <li>Your workflow is unique and generic tools force too many workarounds.</li>
+          </ul>
+
+          <h2 id="not">When you should NOT build custom (yet)</h2>
+          <ul>
+            <li>You are still testing your business model.</li>
+            <li>Your process changes every week.</li>
+            <li>A simple CRM/accounting tool already solves 80% of your needs.</li>
+            <li>You can’t clearly measure the ROI of custom development yet.</li>
+          </ul>
+
+          <h2 id="compare">Build vs Buy Comparison</h2>
+          <div class="compare">
+            <div class="compare-row">
+              <div class="compare-cell">
+                <strong>Build (Custom Software)</strong><br>
+                Tailored workflow, automation, competitive advantage.
+              </div>
+              <div class="compare-cell">
+                <strong>Buy (Off-the-shelf Tools)</strong><br>
+                Faster setup, lower upfront cost, standard processes.
+              </div>
+            </div>
+            <div class="compare-row">
+              <div class="compare-cell">
+                High scalability + full control.
+              </div>
+              <div class="compare-cell">
+                Limited customization + subscription costs.
+              </div>
+            </div>
+            <div class="compare-row">
+              <div class="compare-cell">
+                Best for growing structured businesses.
+              </div>
+              <div class="compare-cell">
+                Best for early-stage or simple operations.
+              </div>
+            </div>
+          </div>
+
+          <h2 id="examples">Common Custom Systems in Kenya</h2>
+          <ul>
+            <li>Inventory + Sales + M-Pesa reconciliation dashboards.</li>
+            <li>School management systems (fees, results, attendance).</li>
+            <li>Clinic / hospital systems (appointments, billing, pharmacy).</li>
+            <li>Delivery & logistics tracking systems.</li>
+            <li>Client portals for law firms & construction projects.</li>
+          </ul>
+
+          <h2 id="cost">What affects cost?</h2>
+          <ul>
+            <li>Number of modules (inventory, HR, reporting, etc.).</li>
+            <li>User roles and access control.</li>
+            <li>Integrations (M-Pesa, SMS, accounting, POS).</li>
+            <li>Security and hosting requirements.</li>
+          </ul>
+
+          <div class="callout">
+            <strong>Smart strategy:</strong> Start with an MVP (minimum viable system),
+            solve your biggest pain point first, then expand in phases.
+          </div>
+
+          <div class="author-box">
+            <div class="avatar"><i class="fa-solid fa-pen-nib"></i></div>
+            <div>
+              <strong>Written by Saraha Developers</strong><br>
+              Custom systems, automation & software development for Kenyan businesses.
+            </div>
+          </div>
+
+          <h2 style="margin-top:34px;">Related posts</h2>
+          <div class="related">
+            <a href="/blog/how-much-does-a-website-cost-in-kenya.html">
+              <strong>How Much Does a Website Cost in Kenya?</strong>
+            </a>
+            <a href="/blog/how-to-rank-on-google-kenya.html">
+              <strong>How to Rank on Google in Kenya</strong>
+            </a>
+          </div>
+        </article>
+
+        <aside class="toc">
+          <h3>On this page</h3>
+          <a href="#custom">When to build custom</a>
+          <a href="#not">When not to build</a>
+          <a href="#compare">Build vs Buy</a>
+          <a href="#examples">Examples</a>
+          <a href="#cost">Cost factors</a>
+
+          <div style="margin-top:16px;">
+            <a class="btn btn-primary" style="width:100%; text-align:center;"
+              href="https://wa.me/254723562484?text=Hello%20Saraha%20Developers%2C%20I%20need%20advice%20on%20a%20custom%20system%20for%20my%20business.">
+              WhatsApp Us
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" style="padding:80px 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Not Sure If You Need Custom Software?</h2>
+        <p>We’ll review your workflow and recommend the smartest approach (build vs buy).</p>
+        <a href="/contact.html" class="btn btn-primary">Book a Free Consult</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Saraha Developers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenu = document.getElementById("mobileMenu");
+    const navLinks = document.getElementById("navLinks");
+    if (mobileMenu && navLinks) {
+      mobileMenu.addEventListener("click", () => navLinks.classList.toggle("active"));
+    }
+  </script>
+</body>
+</html>

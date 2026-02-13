@@ -12,6 +12,21 @@
         padding: 0;
         box-sizing: border-box;
       }
+              /* Remove default link styles globally */
+a {
+  color: inherit;           /* Keep the current text color */
+  text-decoration: none;    /* Remove underline */
+  transition: color 0.3s;   /* Optional: smooth hover if you want */
+}
+
+/* Optional: keep them same on hover, focus, active */
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 
       body {
         font-family: 'Jost', sans-serif;
@@ -106,8 +121,7 @@
 
       /* Header & Navigation */
       header {
-        background-color: black;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        background-color:transparent;
         position: fixed;
         width: 100%;
         z-index: 1000;
@@ -137,6 +151,23 @@
         margin-right: 8px;
         color: var(--emerald);
       }
+      .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+.logo img {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
 
       .nav-links {
         display: flex;
@@ -680,24 +711,8 @@
         }
       }
 
-      /* Particle Animation */
-      .particles {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        z-index: 1;
-      }
-
-      .particle {
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
-        animation: floatParticle 15s infinite linear;
-      }
-
+      
+    
       @keyframes floatParticle {
         0% {
           transform: translateY(100vh) rotate(0deg);
