@@ -9,11 +9,13 @@
   <meta name="description" content="Learn how to build an online store that converts in Kenya in 2026: product pages, M-Pesa payments, delivery options, trust signals, speed, SEO, and checkout best practices." />
   <meta name="keywords" content="online store kenya, ecommerce website kenya, mpesa ecommerce, ecommerce checkout kenya, build online shop kenya, ecommerce SEO kenya, online store nairobi, ecommerce kitengela, ecommerce ruiru, saraha developers" />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+  <!-- IMPORTANT: this page lives in /blog/ -->
   <link rel="canonical" href="https://sarahadevelopers.co.ke/blog/how-to-build-an-online-store-that-converts-in-kenya.html" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="/saraha-developers-favicon.webp" type="image/webp" />
-  <link rel="apple-touch-icon" href="/saraha-developers-favicon.webp" />
+  <!-- Theme / Favicons -->
+  <link rel="icon" href="../saraha-developers-favicon.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="../saraha-developers-favicon.webp" />
   <meta name="theme-color" content="#0b1220" />
 
   <!-- Open Graph -->
@@ -40,8 +42,8 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- Re-use your main site CSS -->
-  <link rel="stylesheet" href="/index.css" />
+  <!-- Re-use your main site CSS (IMPORTANT: go up one level) -->
+  <link rel="stylesheet" href="../index.css" />
 
   <!-- Page-specific styles (same vibe as your previous blog template) -->
   <style>
@@ -259,7 +261,7 @@
     }
   </style>
 
-  <!-- Schema: BlogPosting (enhanced) -->
+  <!-- Schema: BlogPosting -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -285,7 +287,7 @@
       }
     },
     "datePublished": "2026-02-12",
-    "dateModified": "2026-02-13",
+    "dateModified": "2026-02-18",
     "articleSection": "E-commerce",
     "about": ["E-commerce", "M-Pesa Payments", "Checkout Optimization", "Delivery", "SEO", "Performance"],
     "keywords": "online store kenya, ecommerce website kenya, mpesa ecommerce, ecommerce checkout kenya, ecommerce SEO kenya",
@@ -306,7 +308,7 @@
   }
   </script>
 
-  <!-- Schema: LocalBusiness (local intent) -->
+  <!-- Schema: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -320,11 +322,15 @@
       "@type": "PostalAddress",
       "addressCountry": "KE",
       "addressLocality": "Nairobi"
-    }
+    },
+    "sameAs": [
+      "https://www.instagram.com/sarahadevelopers/",
+      "https://www.linkedin.com/in/charles-karanja-0b4b15223/"
+    ]
   }
   </script>
 
-  <!-- Schema: FAQPage (added) -->
+  <!-- Schema: FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -372,19 +378,21 @@
   <header>
     <div class="container">
       <nav class="navbar">
-        <a href="/index.html" class="logo">
-          <img src="/saraha-developers-favicon.webp" alt="Saraha Developers Ltd Logo" class="logo-img" />
+        <a href="../index.html" class="logo">
+          <img src="../saraha-developers-favicon.webp" alt="Saraha Developers Ltd Logo" class="logo-img" />
         </a>
+
         <ul class="nav-links" id="navLinks">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/technologies.html">Technologies</a></li>
-          <li><a href="/portfolio.html">Portfolio</a></li>
-          <li><a href="/blogs.html" class="active">Blog</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../technologies.html">Technologies</a></li>
+          <li><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="../blogs.html" class="active">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
-        <div class="mobile-menu" id="mobileMenu">
+
+        <div class="mobile-menu" id="mobileMenu" aria-label="Open menu" role="button" tabindex="0">
           <i class="fas fa-bars"></i>
         </div>
       </nav>
@@ -406,7 +414,7 @@
         </div>
 
         <div class="hero-btns" style="margin-top: 26px;">
-          <a href="/contact.html" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Build My Store</a>
+          <a href="../contact.html" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Build My Store</a>
           <a href="#toc" class="btn btn-secondary">Jump to Checklist</a>
         </div>
       </div>
@@ -430,13 +438,12 @@
             <strong>Conversion goal:</strong> reduce doubts + reduce steps + increase trust — especially on mobile.
           </div>
 
-          <!-- NEW: Local service area booster -->
           <div class="callout">
             <strong>Serving Nairobi, Kitengela & Ruiru:</strong>
             We build mobile-first online stores with M-Pesa checkout, product SEO, and conversion-focused design.
             <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
-              <a class="btn btn-primary" href="/services.html">View Packages</a>
-              <a class="btn btn-secondary" href="/portfolio.html">See Work</a>
+              <a class="btn btn-primary" href="../services.html">View Packages</a>
+              <a class="btn btn-secondary" href="../portfolio.html">See Work</a>
             </div>
           </div>
 
@@ -528,6 +535,20 @@
             <div class="check-item"><i class="fa-solid fa-check"></i><div>Trust: WhatsApp + phone + policies + testimonials.</div></div>
           </div>
 
+          <!-- NEW: Proper on-page FAQ content (matches FAQ schema) -->
+          <h2 id="faq">9) FAQs</h2>
+          <h3>What payment method converts best for online stores in Kenya?</h3>
+          <p>M-Pesa STK Push usually converts best because it’s mobile-first and familiar. Add card payments if you serve diaspora or customers who prefer cards.</p>
+
+          <h3>Should I allow pay on delivery in Kenya?</h3>
+          <p>It can increase orders, but it also increases fake orders and returns. If you use it, add confirmations, clear delivery rules, and limit it to safe zones or repeat customers.</p>
+
+          <h3>How do I make my e-commerce store rank on Google in Kenya?</h3>
+          <p>Use SEO-friendly product/category pages, fast mobile performance, clear internal linking, and content that targets buyer intent (pricing, comparisons, and how-to content).</p>
+
+          <h3>Can Saraha Developers build an online store for Nairobi, Kitengela and Ruiru?</h3>
+          <p>Yes. We build fast, mobile-first stores with M-Pesa checkout, delivery clarity, and SEO for businesses in Nairobi, Kitengela, Ruiru and across Kenya.</p>
+
           <div class="callout">
             <strong>Want Saraha Developers to build your store?</strong><br />
             We design fast e-commerce websites with M-Pesa checkout, product SEO, and conversion-focused layouts.
@@ -550,19 +571,20 @@
           <!-- Related -->
           <h2 style="margin-top: 34px;">Related posts</h2>
           <div class="related">
-            <a href="/blog/how-much-does-a-website-cost-in-kenya.html">
+            <a href="how-much-does-a-website-cost-in-kenya.html">
               <strong>How Much Does a Website Cost in Kenya?</strong>
               <div style="opacity:.85; margin-top:6px;">Pricing breakdown + what affects cost.</div>
             </a>
-            <a href="/blog/core-web-vitals-made-simple.html">
+            <a href="core-web-vitals-kenya.html">
               <strong>Core Web Vitals Made Simple</strong>
               <div style="opacity:.85; margin-top:6px;">Make your store faster on mobile.</div>
             </a>
-            <a href="/blog/how-to-rank-on-google-kenya.html">
+            <a href="how-to-rank-on-google-kenya.html">
               <strong>How to Rank on Google in Kenya (2026)</strong>
               <div style="opacity:.85; margin-top:6px;">Local SEO checklist for more traffic.</div>
             </a>
-            <a href="/blog/seo-services-nairobi.html">
+            <!-- placeholder (create later) -->
+            <a href="seo-services-nairobi.html">
               <strong>SEO Services in Nairobi: What Actually Moves Rankings</strong>
               <div style="opacity:.85; margin-top:6px;">What works in competitive searches.</div>
             </a>
@@ -580,6 +602,7 @@
           <a href="#speedseo">6) Speed + SEO</a>
           <a href="#trust">7) Trust signals</a>
           <a href="#checklist">8) Launch checklist</a>
+          <a href="#faq">9) FAQs</a>
 
           <div style="margin-top: 16px;">
             <a class="btn btn-primary" style="width:100%; text-align:center;"
@@ -599,7 +622,7 @@
       <div class="section-header">
         <h2>Ready to Launch Your Online Store?</h2>
         <p>We’ll build a fast, mobile-first store with M-Pesa payments, delivery clarity, and SEO that brings buyers.</p>
-        <a href="/contact.html" class="btn btn-primary">Request a Proposal</a>
+        <a href="../contact.html" class="btn btn-primary">Request a Proposal</a>
       </div>
     </div>
   </section>
@@ -614,11 +637,17 @@
   </footer>
 
   <script>
-    // Mobile nav toggle
+    // Mobile nav toggle (click + keyboard)
     const mobileMenu = document.getElementById("mobileMenu");
     const navLinks = document.getElementById("navLinks");
+
+    const toggleNav = () => navLinks && navLinks.classList.toggle("active");
+
     if (mobileMenu && navLinks) {
-      mobileMenu.addEventListener("click", () => navLinks.classList.toggle("active"));
+      mobileMenu.addEventListener("click", toggleNav);
+      mobileMenu.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") toggleNav();
+      });
     }
   </script>
 </body>

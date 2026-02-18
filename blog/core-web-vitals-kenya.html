@@ -9,11 +9,13 @@
   <meta name="description" content="Core Web Vitals made simple for 2026: improve LCP, INP and CLS with practical steps (images, fonts, caching, JS, CSS, hosting). Build faster websites that rank on Google in Kenya — Nairobi, Kitengela & Ruiru." />
   <meta name="keywords" content="core web vitals kenya, website speed optimization kenya, improve lcp inp cls, fast website best practices, pagespeed insights kenya, website speed nairobi, saraha developers" />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
-  <link rel="canonical" href="https://sarahadevelopers.co.ke/blog/core-web-vitals-made-simple.html" />
+
+  <!-- IMPORTANT: this page lives in /blog/ -->
+  <link rel="canonical" href="https://sarahadevelopers.co.ke/blog/core-web-vitals-kenya.html" />
 
   <!-- Theme / Favicons -->
-  <link rel="icon" href="/saraha-developers-favicon.webp" type="image/webp" />
-  <link rel="apple-touch-icon" href="/saraha-developers-favicon.webp" />
+  <link rel="icon" href="../saraha-developers-favicon.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="../saraha-developers-favicon.webp" />
   <meta name="theme-color" content="#0b1220" />
 
   <!-- Open Graph -->
@@ -21,7 +23,7 @@
   <meta property="og:title" content="Best Practices for Fast Websites: Core Web Vitals Made Simple (2026)" />
   <meta property="og:description" content="Improve LCP, INP and CLS with practical steps (images, fonts, caching, JS, CSS, hosting). Faster websites that rank better." />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://sarahadevelopers.co.ke/blog/core-web-vitals-made-simple.html" />
+  <meta property="og:url" content="https://sarahadevelopers.co.ke/blog/core-web-vitals-kenya.html" />
   <meta property="og:image" content="https://sarahadevelopers.co.ke/assets/og-core-web-vitals.jpg" />
 
   <!-- Twitter -->
@@ -40,8 +42,8 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- Re-use your main site CSS -->
-  <link rel="stylesheet" href="/index.css" />
+  <!-- Re-use your main site CSS (IMPORTANT: go up one level) -->
+  <link rel="stylesheet" href="../index.css" />
 
   <!-- Page Styles (matches your blog styling) -->
   <style>
@@ -274,14 +276,14 @@
     }
   </style>
 
-  <!-- Schema: BlogPosting (enhanced) -->
+  <!-- Schema: BlogPosting -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://sarahadevelopers.co.ke/blog/core-web-vitals-made-simple.html"
+      "@id": "https://sarahadevelopers.co.ke/blog/core-web-vitals-kenya.html"
     },
     "headline": "Best Practices for Fast Websites: Core Web Vitals Made Simple (2026)",
     "description": "Core Web Vitals made simple for 2026: improve LCP, INP and CLS with practical steps (images, fonts, caching, JS, CSS, hosting).",
@@ -300,7 +302,7 @@
       }
     },
     "datePublished": "2026-02-12",
-    "dateModified": "2026-02-13",
+    "dateModified": "2026-02-18",
     "articleSection": "Performance",
     "about": ["Core Web Vitals", "Website Speed", "SEO"],
     "keywords": "core web vitals kenya, website speed optimization, LCP INP CLS, performance SEO, Nairobi web design",
@@ -316,12 +318,12 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sarahadevelopers.co.ke/" },
       { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://sarahadevelopers.co.ke/blogs.html" },
-      { "@type": "ListItem", "position": 3, "name": "Core Web Vitals Made Simple", "item": "https://sarahadevelopers.co.ke/blog/core-web-vitals-made-simple.html" }
+      { "@type": "ListItem", "position": 3, "name": "Core Web Vitals Made Simple", "item": "https://sarahadevelopers.co.ke/blog/core-web-vitals-kenya.html" }
     ]
   }
   </script>
 
-  <!-- Schema: LocalBusiness (authority + local intent) -->
+  <!-- Schema: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -343,7 +345,7 @@
   }
   </script>
 
-  <!-- Schema: FAQPage (expanded) -->
+  <!-- Schema: FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -399,19 +401,21 @@
   <header>
     <div class="container">
       <nav class="navbar">
-        <a href="/index.html" class="logo">
-          <img src="/saraha-developers-favicon.webp" alt="Saraha Developers Ltd Logo" class="logo-img" />
+        <a href="../index.html" class="logo">
+          <img src="../saraha-developers-favicon.webp" alt="Saraha Developers Ltd Logo" class="logo-img" />
         </a>
+
         <ul class="nav-links" id="navLinks">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/technologies.html">Technologies</a></li>
-          <li><a href="/portfolio.html">Portfolio</a></li>
-          <li><a href="/blogs.html" class="active">Blog</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../services.html">Services</a></li>
+          <li><a href="../technologies.html">Technologies</a></li>
+          <li><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="../blogs.html" class="active">Blogs</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
-        <div class="mobile-menu" id="mobileMenu">
+
+        <div class="mobile-menu" id="mobileMenu" aria-label="Open menu" role="button" tabindex="0">
           <i class="fas fa-bars"></i>
         </div>
       </nav>
@@ -433,7 +437,7 @@
         </div>
 
         <div class="hero-btns" style="margin-top: 26px;">
-          <a href="/contact.html" class="btn btn-primary"><i class="fa-solid fa-gauge-high"></i> Speed Audit</a>
+          <a href="../contact.html" class="btn btn-primary"><i class="fa-solid fa-gauge-high"></i> Speed Audit</a>
           <a href="#toc" class="btn btn-secondary">Jump to Checklist</a>
         </div>
       </div>
@@ -458,13 +462,12 @@
             and how stable the layout is (<strong>CLS</strong>).
           </div>
 
-          <!-- NEW: Local service area block -->
           <div class="callout">
             <strong>Serving Nairobi, Kitengela & Ruiru:</strong>
             Saraha Developers helps businesses rank on Google with fast websites, local SEO and conversion-focused design.
             <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
-              <a class="btn btn-primary" href="/services.html">View Services</a>
-              <a class="btn btn-secondary" href="/portfolio.html">See Work</a>
+              <a class="btn btn-primary" href="../services.html">View Services</a>
+              <a class="btn btn-secondary" href="../portfolio.html">See Work</a>
             </div>
           </div>
 
@@ -551,12 +554,11 @@
             <div class="check-item"><i class="fa-solid fa-check"></i><div>Limit heavy third-party scripts.</div></div>
           </div>
 
-          <!-- NEW: Internal link boosters -->
           <h2 id="next">7) Next steps (recommended)</h2>
           <ul>
-            <li><a href="/services.html">Explore our web design + SEO services</a> (deliverables and support).</li>
-            <li><a href="/portfolio.html">See recent projects</a> (real examples and layouts).</li>
-            <li><a href="/contact.html">Request a quote</a> (fast response on WhatsApp).</li>
+            <li><a href="../services.html">Explore our web design + SEO services</a> (deliverables and support).</li>
+            <li><a href="../portfolio.html">See recent projects</a> (real examples and layouts).</li>
+            <li><a href="../contact.html">Request a quote</a> (fast response on WhatsApp).</li>
           </ul>
 
           <div class="callout">
@@ -569,7 +571,6 @@
             </div>
           </div>
 
-          <!-- FAQ (on-page content to match FAQ schema) -->
           <h2 id="faq">8) FAQ</h2>
           <h3>Do fast websites rank better on Google in Kenya?</h3>
           <p>Speed improves user experience and reduces bounce rate. Core Web Vitals are part of Google’s page experience signals, so faster sites tend to perform better over time.</p>
@@ -580,7 +581,6 @@
           <h3>Can you help with speed + SEO in Nairobi, Kitengela and Ruiru?</h3>
           <p>Yes. We provide performance audits, Core Web Vitals fixes, technical SEO and local SEO (Google Business Profile) for businesses in Nairobi, Kitengela, Ruiru and across Kenya.</p>
 
-          <!-- Author -->
           <div class="author-box">
             <div class="avatar"><i class="fa-solid fa-pen-nib"></i></div>
             <div>
@@ -589,22 +589,22 @@
             </div>
           </div>
 
-          <!-- Related (upgraded with local pillars) -->
           <h2 style="margin-top: 34px;">Related posts</h2>
           <div class="related">
-            <a href="/blog/best-web-design-company-nairobi.html">
+            <!-- These are placeholders. Create these files later OR change links when ready. -->
+            <a href="best-web-design-company-nairobi.html">
               <strong>Best Web Design Company in Nairobi (2026): What to Look For</strong>
               <div style="opacity:.85; margin-top:6px;">Buyer guide + red flags to avoid.</div>
             </a>
-            <a href="/blog/google-maps-seo-nairobi.html">
+            <a href="google-maps-seo-nairobi.html">
               <strong>Google Maps SEO in Nairobi: Rank on Google Business Profile</strong>
               <div style="opacity:.85; margin-top:6px;">Local SEO steps to get calls and leads.</div>
             </a>
-            <a href="/blog/web-design-kitengela.html">
+            <a href="web-design-kitengela.html">
               <strong>Web Design in Kitengela: Costs, Timelines & What You Get</strong>
               <div style="opacity:.85; margin-top:6px;">Local pricing + packages + FAQs.</div>
             </a>
-            <a href="/blog/web-design-ruiru.html">
+            <a href="web-design-ruiru.html">
               <strong>Website Design in Ruiru: What Works for Real Estate & SMEs</strong>
               <div style="opacity:.85; margin-top:6px;">Layouts, CTAs and SEO structure that converts.</div>
             </a>
@@ -641,7 +641,7 @@
       <div class="section-header">
         <h2>Want a Faster Website That Ranks Better?</h2>
         <p>We optimize speed, Core Web Vitals, and SEO so your site loads fast on mobile and converts visitors into leads.</p>
-        <a href="/contact.html" class="btn btn-primary">Request Optimization</a>
+        <a href="../contact.html" class="btn btn-primary">Request Optimization</a>
       </div>
     </div>
   </section>
@@ -659,8 +659,14 @@
     // Mobile nav toggle
     const mobileMenu = document.getElementById("mobileMenu");
     const navLinks = document.getElementById("navLinks");
+
+    const toggleNav = () => navLinks && navLinks.classList.toggle("active");
+
     if (mobileMenu && navLinks) {
-      mobileMenu.addEventListener("click", () => navLinks.classList.toggle("active"));
+      mobileMenu.addEventListener("click", toggleNav);
+      mobileMenu.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") toggleNav();
+      });
     }
   </script>
 </body>
