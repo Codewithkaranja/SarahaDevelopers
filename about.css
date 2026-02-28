@@ -177,19 +177,35 @@ header{
   width:100%;
   z-index:1000;
 
-  background: rgba(0,0,0,.30);
-  border-bottom: 1px solid rgba(255,255,255,.14);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  /* SOLID PREMIUM BLACK */
+  background: #000; 
+  border-bottom: 1px solid rgba(255,255,255,.08);
 
-  transition: background .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease);
+  /* remove glass */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  transition: background .25s var(--ease),
+              box-shadow .25s var(--ease),
+              border-color .25s var(--ease);
 }
 
 header.scrolled{
-  background: rgba(0,0,0,.38);
-  box-shadow: 0 18px 60px rgba(0,0,0,.20);
-  border-bottom-color: rgba(255,255,255,.16);
+  /* slightly elevated black when scrolling */
+  background: #000;
+  box-shadow: 0 20px 60px rgba(0,0,0,.6);
+  border-bottom-color: rgba(255,255,255,.12);
+
 }
+header{
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    #050505 60%,
+    #0a0a0a 100%
+  );
+}
+
 
 .navbar{
   min-height: var(--nav-h);
@@ -285,6 +301,8 @@ header.scrolled{
   position:relative;
   display:flex;
   align-items:center;
+  justify-content:center; /* 🔥 THIS CENTERS CONTENT */
+  text-align:center;      /* centers text */
   overflow:hidden;
   color:#fff;
 
@@ -315,9 +333,9 @@ header.scrolled{
   position:relative;
   z-index:2;
   max-width: 920px;
-  padding-top: 90px;
+  padding-top: 0;   /* remove top push */
+  margin: 0 auto;   /* perfect centering */
 }
-
 .hero-content h1{
   font-size: clamp(2.6rem, 5vw, 4.6rem);
   font-weight: 500;
@@ -336,6 +354,9 @@ header.scrolled{
   font-size: 1.2rem;
   color: rgba(255,255,255,0.80);
   max-width: 680px;
+}
+.hero-content p{
+  margin: 16px auto 0; /* center paragraph */
 }
 
 .hero-actions{
@@ -1028,9 +1049,24 @@ footer{
 
   .nav-links a::after{ display:none; }
 
+  .hero{
+    display:flex;
+    align-items:center;     /* vertical center */
+    justify-content:center; /* horizontal center */
+    text-align:center;
+    min-height: 50vh;       /* more breathing room */
+  }
+
   .hero-content{
     text-align:center;
-    padding-top: 110px;
+    padding-top: 0;         /* 🔥 remove offset */
+    margin: 0 auto;
+    max-width: 92%;
+  }
+
+  .hero-content p{
+    margin-left:auto;
+    margin-right:auto;
   }
 
   .hero-actions{
@@ -1042,7 +1078,6 @@ footer{
     width: 100%;
     max-width: 260px;
   }
-
   .footer-content{ grid-template-columns: 1fr; }
 }
 
